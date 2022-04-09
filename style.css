@@ -1,0 +1,117 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #2f2f2f;
+  color: aliceblue;
+  font-family: Arial;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80vw;
+  height: 100%;
+}
+
+.container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  overflow: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .profile {
+  width: 100%;
+}
+
+.container .contacts img {
+  height: 2rem;
+  margin: 0.5em;
+}
+
+.container .break {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 0;
+}
+
+.profile .ChName,
+.profile .EnName {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0.3em 0em 0.5em 0.1em;
+  white-space: nowrap;
+}
+
+.profile .EnName {
+  margin: 0.3em 0em 1em 0.3em;
+  color: #b25978;
+}
+
+.profile .job {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0.3em;
+  margin-right: 0;
+  white-space: nowrap;
+}
+
+.profile .intro {
+  margin: 1.5em 0.5em 1.5em;
+  line-height: 2em;
+}
+
+.profile .intro a {
+  word-break: keep-all;
+  white-space: pre;
+  overflow-wrap: normal;
+}
+
+.section-title {
+  margin-left: 2rem;
+  border-bottom: #60a0af 3px solid;
+  color: #60a0af;
+}
+
+.distributions {
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.distribution {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.2rem 0.5rem;
+  margin: .5rem;
+  color: ghostwhite;
+  background-color: #60a0af;
+  border-radius: 1rem;
+  font-weight: bold;
+  word-break: normal;
+  white-space: normal;
+  overflow-wrap: normal;
+  cursor: copy;
+}
+
+.distribution a {
+  color: ghostwhite;
+}
+/*# sourceMappingURL=style.css.map */
