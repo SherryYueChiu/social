@@ -4,7 +4,6 @@ module.exports = {
         './images/**.*',
         './js/**.*',
         './css/**.*',
-        './media/**.*',
         './index.html'
     ],
     runtimeCaching: [{
