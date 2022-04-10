@@ -1,15 +1,18 @@
+var curAVATAR = null;
 var AVATARS = [
-  'Sketch.png',
+  'ZhongYanGingYuan.jpg',
+  'Sketch.jpg',
   'FengLePark.jpg'
 ];
-
+var curNICKNAME = null;
 var NICKNAMES = [
-  `玥餅`, `梓榳`, `Sherry`
+  `玥餅`, `梓榳`, `SherryYue`
 ];
+var curINTRO = null;
 var INTROS = [
   `Pre-Op TS, HRT 2Y+, GID*1
   Pronoun: She/They
-  #社會運動參與者 #素食者 #聲音控 #極簡主義`,
+  #社會運動參與者 #素食者 #聲音控 #極簡主義 #RA`,
   `前端工程師
   #逆向工程玩家`,
   `Same, same but different
@@ -17,29 +20,126 @@ var INTROS = [
 ];
 
 function setAvatar() {
-  $('.main>.info>.avatar')[0].style.backgroundImage = `url(images/avatar/${AVATARS[Math.floor(Math.random() * AVATARS.length)]})`
+  if (curAVATAR === null) curAVATAR = Math.floor(Math.random() * AVATARS.length);
+  else curAVATAR = (curAVATAR + 1) % AVATARS.length;
+  $('.main>.info>.avatar')[0].style.backgroundImage = `url(images/avatar/${AVATARS[curAVATAR]})`
 }
 
 function setName() {
-  $('.main>.info>.nickname').html(NICKNAMES[Math.floor(Math.random() * NICKNAMES.length)]);
+  if (curNICKNAME === null) curNICKNAME = Math.floor(Math.random() * NICKNAMES.length);
+  else curNICKNAME = (curNICKNAME + 1) % NICKNAMES.length;
+  $('.main>.info>.nickname').html(NICKNAMES[curNICKNAME]);
 }
 
 function setIntro() {
-  $('.main>.info>.intro').html(INTROS[Math.floor(Math.random() * INTROS.length)]);
+  if (curINTRO === null) curINTRO = Math.floor(Math.random() * INTROS.length);
+  else curINTRO = (curINTRO + 1) % INTROS.length;
+  $('.main>.info>.intro').html(INTROS[curINTRO]);
 }
 
-function setRecommended(){
+function setRecommended() {
 
 }
 
-function setPosts(){
-  
+function setMedias() {
+  MEDIAS.forEach((post, idx) => {
+    let type = post.type;
+    if (type === 'image') {
+      let postElm = $(`<div class="post" idx="${idx}"></div>`);
+      let image = post.src;
+      postElm.append(`<div style="background-image:url(./media/${image})" class="image"></div>`);
+      $('.main>.medias').append(postElm);
+    }
+    else if (type === 'video') {
+      let postElm = $(`<div class="post" idx="${idx}"></div>`);
+      let image = post.thumbnail;
+      postElm.append(`<div style="background-image:url(./media/${image})" class="image"></div>`);
+      $('.main>.medias').append(postElm);
+    }
+  });
 }
 
-function showContactOptions(){
+function setPosts() {
+  POSTS.forEach(post => {
+    let link = post?.link;
+    let title = post?.title;
+    let time = post?.time;
+    let content = post?.content;
+    let postElm = $('<div class="post"></div>');
+    if (title) {
+      if (link) {
+        let headElm = $(`<div class="title">${title}<span class="linkIcon fa-solid fa-arrow-up-right-from-square"></span></div>`);
+        headElm.attr('onclick', `window.open("${link}")`);
+        postElm.append(headElm);
+      } else {
+        let headElm = $(`<div class="title">${title}</div>`);
+        postElm.append(headElm);
+      }
+    }
+    if (content) postElm.append(`<div class="content">${content}</div>`);
+    if (time) postElm.append(`<div class="time">${time}</div>`);
+    $('.main>.posts').append(postElm);
+  });
+}
+
+function setCalendar() {
+  CALENDAR.forEach(post => {
+    let link = post?.link;
+    let title = post?.title;
+    let time = post?.time;
+    let description = post?.description;
+    let postElm = $('<div class="event"></div>');
+    if (time) postElm.append(`<div class="time">${time}</div>`);
+    if (title) {
+      if (link) {
+        let headElm = $(`<div class="title">${title}<span class="linkIcon fa-solid fa-arrow-up-right-from-square"></span></div>`);
+        headElm.attr('onclick', `window.open("${link}")`);
+        postElm.append(headElm);
+      } else {
+        let headElm = $(`<div class="title">${title}</div>`);
+        postElm.append(headElm);
+      }
+    }
+    if (description) postElm.append(`<div class="description">${description}</div>`);
+    $('.main>.calendar').append(postElm);
+  })
+}
+
+function copiedAlert(msg) {
+  Swal.fire(msg);
+}
+
+function showMedia() {
+  $('.main>.paginator>.medias').removeClass('blur');
+  $('.main>.paginator>.posts').addClass('blur');
+  $('.main>.paginator>.calendar').addClass('blur');
+  $('.main>.medias').removeClass('hide');
+  $('.main>.posts').addClass('hide');
+  $('.main>.calendar').addClass('hide');
+}
+
+function showPost() {
+  $('.main>.paginator>.medias').addClass('blur');
+  $('.main>.paginator>.posts').removeClass('blur');
+  $('.main>.paginator>.calendar').addClass('blur');
+  $('.main>.medias').addClass('hide');
+  $('.main>.posts').removeClass('hide');
+  $('.main>.calendar').addClass('hide');
+}
+
+function showCalendar() {
+  $('.main>.paginator>.medias').addClass('blur');
+  $('.main>.paginator>.posts').addClass('blur');
+  $('.main>.paginator>.calendar').removeClass('blur');
+  $('.main>.medias').addClass('hide');
+  $('.main>.posts').addClass('hide');
+  $('.main>.calendar').removeClass('hide');
+}
+
+function showContactOptions() {
   $('.contactOptionsContainer').removeClass('hide');
 }
 
-function dismissContactOptions(){
+function dismissContactOptions() {
   $('.contactOptionsContainer').addClass('hide');
 }

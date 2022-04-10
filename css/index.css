@@ -3,6 +3,17 @@ body {
   color: aliceblue;
 }
 
+@media (min-width: 800px) {
+  .screen {
+    max-width: 800px;
+    margin: auto;
+  }
+  .contactOptions {
+    max-width: 800px;
+    margin: auto;
+  }
+}
+
 .main .info {
   display: -ms-grid;
   display: grid;
@@ -10,7 +21,6 @@ body {
       grid-template-columns: 120px auto;
   -ms-grid-rows: 3rem auto;
       grid-template-rows: 3rem auto;
-  font-weight: bold;
   margin: 0.5rem;
 }
 
@@ -26,7 +36,8 @@ body {
   margin: 1rem 0 1rem 0;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 2px solid aliceblue;
+  outline: 2px solid aliceblue;
+  outline-offset: 3px;
   border-radius: 50%;
 }
 
@@ -37,6 +48,7 @@ body {
   -ms-grid-row: 1;
   grid-row: 1;
   margin: 1rem 0 1rem 0;
+  font-weight: bold;
 }
 
 .main .info .intro {
@@ -51,7 +63,7 @@ body {
 }
 
 .main .interact {
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 1rem 0.5rem;
 }
 
 .main .interact .pm {
@@ -68,6 +80,53 @@ body {
   height: 2rem;
   border: 1px solid aliceblue;
   border-radius: 0.5rem;
+}
+
+.main .interact .pm:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+.main .paginator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 2rem;
+}
+
+.main .paginator > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33%;
+  margin: 0.1rem;
+  padding: 1rem 0 0.5rem 0;
+  font-size: 1.5rem;
+  border-bottom: 1px solid aliceblue;
+}
+
+.main .paginator > *.blur {
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
 }
 
 .contactOptionsContainer .overlay {
@@ -91,15 +150,140 @@ body {
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  left: 0;
   bottom: 0;
   width: 100%;
+  -webkit-transform: translateX(-0.5rem);
+          transform: translateX(-0.5rem);
+  margin: auto;
   background-color: #262626;
   border-radius: 1rem 1rem 0 0;
   padding: 1rem 0 1rem 0;
+  font-size: 1.2rem;
+}
+
+.contactOptionsContainer .contactOptions .option {
+  padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.contactOptionsContainer .contactOptions .arrow {
+  position: absolute;
+  right: 1rem;
+}
+
+.main > .medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 1rem;
+}
+
+.main > .medias .post {
+  width: 33%;
+  aspect-ratio: 1 / 1;
+}
+
+.main > .medias .post .image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.main > .posts {
+  padding-top: 1rem;
+}
+
+.main > .posts .post {
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem 0 0.5rem 0;
+  background-color: #2e2e2e;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  color: black;
+}
+
+.main > .posts .post .title {
+  padding: 0 0 0.2rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px dashed #2e2e2e;
+}
+
+.main > .posts .post .title > .linkIcon {
+  margin-left: 0.5rem;
+}
+
+.main > .posts .post .content {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  line-height: 1.2rem;
+  white-space: pre-line;
+}
+
+.main > .posts .post .time {
+  padding: 0 0.5rem 0 0;
+  font-size: 0.8rem;
+  text-align: end;
+}
+
+.main > .calendar {
+  padding-top: 1rem;
+}
+
+.main > .calendar .event {
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem 0 0.5rem 0;
+  background-color: #2e2e2e;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  color: black;
+}
+
+.main > .calendar .event .title {
+  padding: 0 0 0.2rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px dashed #2e2e2e;
+}
+
+.main > .calendar .event .title > .linkIcon {
+  margin-left: 0.5rem;
+}
+
+.main > .calendar .event .description {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  line-height: 1.2rem;
+  white-space: pre-line;
+}
+
+.main > .calendar .event .time {
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: #2e2e2e;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.5rem;
+  color: aliceblue;
 }
 
 .hide {
-  display: none;
+  display: none !important;
+}
+
+.fa-solid {
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+}
+
+.fa-brands {
+  font-family: "Font Awesome 5 Brands";
 }
 /*# sourceMappingURL=index.css.map */

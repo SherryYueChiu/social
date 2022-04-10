@@ -17,6 +17,8 @@
     <link rel="icon" href="https://sherryyuechiu.github.io/card/images/logo/maskable_icon_x48.png">
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/app.js"></script>
+    <script src="./service-worker.js"></script>
+
     <!-- HTML Meta Tags -->
     <meta name="description" content="梓榳的典藏">
     <meta name="KeyWords" content="玥餅'梓榳" />
@@ -43,8 +45,9 @@
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./library/bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="./js/fontawesome-free-5.15.4-web/js/all.min.js" />
-    <link rel="stylesheet" href="./js/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/f5e3a3eacb.js" crossorigin="anonymous"></script>
+    <script src="./js/clipboard.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -52,7 +55,7 @@
         <div class="main">
             <div class="info">
                 <div class="avatar" onclick="setAvatar()"></div>
-                <div class="nickname" onclick="setName()">玥餅</div>
+                <div class="nickname" onclick="setName()"></div>
                 <div class="intro" onclick="setIntro()"></div>
             </div>
             <div class="interact">
@@ -61,19 +64,33 @@
             <div class="recommended">
 
             </div>
-            <div class="posts"></div>
+            <div class="paginator">
+                <div class="medias" onclick="showMedia()"><span class="fa-solid fa-photo-film"></span></div>
+                <div class="posts blur" onclick="showPost()"><span class="fa-solid fa-pen-nib"></span></div>
+                <div class="calendar blur" onclick="showCalendar()"><span class="fa-solid fa-calendar-plus"></span>
+                </div>
+            </div>
+            <div class="medias"></div>
+            <div class="posts hide"></div>
+            <div class="calendar hide"></div>
         </div>
 
         <div class="contactOptionsContainer hide">
             <div class="overlay" onclick="dismissContactOptions()"></div>
             <div class="contactOptions">
-                <div class="option">Instagram</div>
-                <div class="option">Telegram</div>
-                <div class="option">email</div>
+                <div class="option" onclick="window.open('https://www.instagram.com/sherryyue4/')">Instagram<span
+                        class="arrow fa-brands fa-instagram"></span></div>
+                <div class="option" onclick="window.open('https://t.me/sherryyue428')">Telegram<span
+                        class="arrow fa-solid fa-paper-plane"></span></div>
+                <div class="option copy" data-clipboard-text="sherryyue.c@protonmail.com" onclick="copiedAlert('已經複製起來了')">email<span
+                        class="arrow fa-solid fa-at"></span></div>
             </div>
         </div>
     </div>
     <script src="./js/index.js"></script>
+    <script src="./js/medias.js"></script>
+    <script src="./js/posts.js"></script>
+    <script src="./js/calendar.js"></script>
 </body>
 
 </html>

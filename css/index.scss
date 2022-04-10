@@ -2,12 +2,23 @@ body {
   background-color: black;
   color: aliceblue;
 }
+
+@media (min-width: 800px) {
+  .screen {
+    max-width: 800px;
+    margin: auto;
+  }
+  .contactOptions {
+    max-width: 800px;
+    margin: auto;
+  }
+}
+
 .main {
   .info {
     display: grid;
     grid-template-columns: 120px auto;
     grid-template-rows: 3rem auto;
-    font-weight: bold;
     margin: 0.5rem;
     .avatar {
       grid-column: 1/2;
@@ -17,13 +28,15 @@ body {
       margin: 1rem 0 1rem 0;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 2px solid aliceblue;
+      outline: 2px solid aliceblue;
+      outline-offset: 3px;
       border-radius: 50%;
     }
     .nickname {
       grid-column: 2 / 3;
       grid-row: 1;
       margin: 1rem 0 1rem 0;
+      font-weight: bold;
     }
     .intro {
       grid-column: 2 / 3;
@@ -34,7 +47,7 @@ body {
     }
   }
   .interact {
-    margin: 0.5rem;
+    margin: 0.5rem 0.5rem 1rem 0.5rem;
     .pm {
       display: flex;
       justify-content: center;
@@ -43,6 +56,33 @@ body {
       height: 2rem;
       border: 1px solid aliceblue;
       border-radius: 0.5rem;
+      &:hover {
+        background-color: aliceblue;
+        color: black;
+      }
+    }
+  }
+
+  .paginator {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+    & > * {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 33%;
+      margin: 0.1rem;
+      padding: 1rem 0 0.5rem 0;
+      font-size: 1.5rem;
+      border-bottom: 1px solid aliceblue;
+      &.blur {
+        filter: brightness(0.4);
+      }
     }
   }
 }
@@ -62,16 +102,118 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    left: 0;
     bottom: 0;
     width: 100%;
+    transform: translateX(-0.5rem);
+    margin: auto;
     background-color: #262626;
     border-radius: 1rem 1rem 0 0;
     padding: 1rem 0 1rem 0;
+    font-size: 1.2rem;
+
+    .option {
+      padding: 0.5rem 0 0.5rem 1rem;
+    }
+    .arrow {
+      position: absolute;
+      right: 1rem;
+    }
+  }
+}
+
+.main > .medias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  .post {
+    width: 33%;
+    aspect-ratio: 1 / 1;
+    .image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+}
+
+.main > .posts {
+  padding-top: 1rem;
+  .post {
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0.5rem 0 0.5rem 0;
+    background-color: #2e2e2e;
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+    color: black;
+    .title {
+      padding: 0 0 0.2rem 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 2px dashed #2e2e2e;
+      & > .linkIcon {
+        margin-left: 0.5rem;
+      }
+    }
+    .content {
+      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+      line-height: 1.2rem;
+      white-space: pre-line;
+    }
+    .time {
+      padding: 0 0.5rem 0 0;
+      font-size: 0.8rem;
+      text-align: end;
+    }
+  }
+}
+
+.main > .calendar {
+  padding-top: 1rem;
+  .event {
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0.5rem 0 0.5rem 0;
+    background-color: #2e2e2e;
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+    color: black;
+    .title {
+      padding: 0 0 0.2rem 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 2px dashed #2e2e2e;
+      & > .linkIcon {
+        margin-left: 0.5rem;
+      }
+    }
+    .description {
+      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+      line-height: 1.2rem;
+      white-space: pre-line;
+    }
+    .time {
+      border-radius: 0 0.5rem 0.5rem 0;
+      background-color: #2e2e2e;
+      width: max-content;
+      padding: 0.5rem;
+      color: aliceblue;
+    }
   }
 }
 
 // misc
 .hide {
-  display: none;
+  display: none !important;
+}
+
+.fa-solid {
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+}
+.fa-brands {
+  font-family: "Font Awesome 5 Brands";
 }
