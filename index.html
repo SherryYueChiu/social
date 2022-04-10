@@ -16,6 +16,7 @@
     <title>梓榳的典藏</title>
     <link rel="icon" href="https://sherryyuechiu.github.io/card/images/logo/maskable_icon_x48.png">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/app.js"></script>
     <!-- HTML Meta Tags -->
     <meta name="description" content="梓榳的典藏">
     <meta name="KeyWords" content="玥餅'梓榳" />
@@ -47,6 +48,31 @@
 </head>
 
 <body>
+    <div class="screen">
+        <div class="main">
+            <div class="info">
+                <div class="avatar" onclick="setAvatar()"></div>
+                <div class="nickname" onclick="setName()">玥餅</div>
+                <div class="intro" onclick="setIntro()"></div>
+            </div>
+            <div class="interact">
+                <div class="pm" onclick="showContactOptions()">發訊息</div>
+            </div>
+            <div class="recommended">
+
+            </div>
+            <div class="posts"></div>
+        </div>
+
+        <div class="contactOptionsContainer hide">
+            <div class="overlay" onclick="dismissContactOptions()"></div>
+            <div class="contactOptions">
+                <div class="option">Instagram</div>
+                <div class="option">Telegram</div>
+                <div class="option">email</div>
+            </div>
+        </div>
+    </div>
     <script src="./js/index.js"></script>
 </body>
 
