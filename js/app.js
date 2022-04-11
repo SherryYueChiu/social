@@ -68,7 +68,7 @@ function setPosts() {
     let postElm = $('<div class="post"></div>');
     if (title) {
       if (link) {
-        let headElm = $(`<div class="title">${title}<span class="linkIcon fa-solid fa-arrow-up-right-from-square"></span></div>`);
+        let headElm = $(`<div class="title">${title}<span class="linkIcon fa-solid fa-ellipsis"></span></div>`);
         headElm.attr('onclick', `window.open("${link}")`);
         postElm.append(headElm);
       } else {
@@ -92,7 +92,7 @@ function setCalendar() {
     if (time) postElm.append(`<div class="time">${time}</div>`);
     if (title) {
       if (link) {
-        let headElm = $(`<div class="title">${title}<span class="linkIcon fa-solid fa-arrow-up-right-from-square"></span></div>`);
+        let headElm = $(`<div class="title">${title}<span class="linkIcon fa-solid fa-ellipsis"></span></div>`);
         headElm.attr('onclick', `window.open("${link}")`);
         postElm.append(headElm);
       } else {

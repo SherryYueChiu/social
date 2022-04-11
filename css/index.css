@@ -1,6 +1,6 @@
 body {
-  background-color: black;
-  color: aliceblue;
+  background-color: white;
+  color: black;
 }
 
 @media (min-width: 800px) {
@@ -78,13 +78,13 @@ body {
           align-items: center;
   width: 100%;
   height: 2rem;
-  border: 1px solid aliceblue;
-  border-radius: 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.2rem;
 }
 
 .main .interact .pm:hover {
-  background-color: aliceblue;
-  color: black;
+  background-color: black;
+  color: aliceblue;
 }
 
 .main .paginator {
@@ -120,13 +120,14 @@ body {
   width: 33%;
   margin: 0.1rem;
   padding: 1rem 0 0.5rem 0;
-  font-size: 1.5rem;
-  border-bottom: 1px solid aliceblue;
+  font-size: 1.2rem;
+  border-bottom: 2px solid black;
 }
 
 .main .paginator > *.blur {
-  -webkit-filter: brightness(0.4);
-          filter: brightness(0.4);
+  border-bottom: 1px solid black;
+  -webkit-filter: contrast(0.2);
+          filter: contrast(0.2);
 }
 
 .contactOptionsContainer .overlay {
@@ -203,9 +204,10 @@ body {
 .main > .posts .post {
   margin: 0.5rem 0 0.5rem 0;
   padding: 0.5rem 0 0.5rem 0;
-  background-color: #2e2e2e;
-  background-color: aliceblue;
-  border-radius: 0.5rem;
+  background-color: white;
+  color: black;
+  border: 1px solid #2e2e2e;
+  border-radius: .2rem;
   color: black;
 }
 
@@ -214,7 +216,7 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
-  border-bottom: 2px dashed #2e2e2e;
+  border-bottom: 1px solid #2e2e2e;
 }
 
 .main > .posts .post .title > .linkIcon {
@@ -231,6 +233,7 @@ body {
   padding: 0 0.5rem 0 0;
   font-size: 0.8rem;
   text-align: end;
+  color: #2e2e2e;
 }
 
 .main > .calendar {
@@ -240,9 +243,10 @@ body {
 .main > .calendar .event {
   margin: 0.5rem 0 0.5rem 0;
   padding: 0.5rem 0 0.5rem 0;
-  background-color: #2e2e2e;
-  background-color: aliceblue;
-  border-radius: 0.5rem;
+  background-color: white;
+  color: black;
+  border: 1px solid #2e2e2e;
+  border-radius: .2rem;
   color: black;
 }
 
@@ -251,11 +255,12 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
-  border-bottom: 2px dashed #2e2e2e;
+  border-bottom: 1px solid #2e2e2e;
 }
 
 .main > .calendar .event .title > .linkIcon {
-  margin-left: 0.5rem;
+  position: absolute;
+  right: 1rem;
 }
 
 .main > .calendar .event .description {
@@ -265,12 +270,12 @@ body {
 }
 
 .main > .calendar .event .time {
-  border-radius: 0 0.5rem 0.5rem 0;
-  background-color: #2e2e2e;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   padding: 0.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: #2e2e2e;
   color: aliceblue;
 }
 
