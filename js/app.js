@@ -45,13 +45,13 @@ function setMedias() {
   MEDIAS.forEach((post, idx) => {
     let type = post.type;
     if (type === 'image') {
-      let postElm = $(`<div class="post" idx="${idx}"></div>`);
+      let postElm = $(`<div class="post" idx="${idx}" onclick="viewMedia(${idx})"></div>`);
       let image = post.src;
       postElm.append(`<div style="background-image:url(./media/${image})" class="image"></div>`);
       $('.main>.medias').append(postElm);
     }
     else if (type === 'video') {
-      let postElm = $(`<div class="post" idx="${idx}"></div>`);
+      let postElm = $(`<div class="post" idx="${idx}" onclick="viewMedia(${idx})"></div>`);
       let image = post.thumbnail;
       postElm.append(`<div style="background-image:url(./media/${image})" class="image"></div>`);
       $('.main>.medias').append(postElm);
@@ -66,15 +66,14 @@ function setPosts() {
     let time = post?.time;
     let content = post?.content;
     let postElm = $('<div class="post"></div>');
+    if (link) {
+      let linkElm = $(`<span class="linkIcon fa-solid fa-paperclip"></span>`);
+      linkElm.attr('onclick', `window.open("${link}")`);
+      postElm.append(linkElm);
+    }
     if (title) {
-      if (link) {
-        let headElm = $(`<div class="title">${title}<span class="linkIcon fa-solid fa-ellipsis"></span></div>`);
-        headElm.attr('onclick', `window.open("${link}")`);
-        postElm.append(headElm);
-      } else {
-        let headElm = $(`<div class="title">${title}</div>`);
-        postElm.append(headElm);
-      }
+      let headElm = $(`<div class="title">${title}</div>`);
+      postElm.append(headElm);
     }
     if (content) postElm.append(`<div class="content">${content}</div>`);
     if (time) postElm.append(`<div class="time">${time}</div>`);
@@ -89,20 +88,35 @@ function setCalendar() {
     let time = post?.time;
     let description = post?.description;
     let postElm = $('<div class="event"></div>');
+    if (link) {
+      let linkElm = $(`<span class="linkIcon fa-solid fa-paperclip"></span>`);
+      linkElm.attr('onclick', `window.open("${link}")`);
+      postElm.append(linkElm);
+    }
     if (time) postElm.append(`<div class="time">${time}</div>`);
     if (title) {
-      if (link) {
-        let headElm = $(`<div class="title">${title}<span class="linkIcon fa-solid fa-ellipsis"></span></div>`);
-        headElm.attr('onclick', `window.open("${link}")`);
-        postElm.append(headElm);
-      } else {
-        let headElm = $(`<div class="title">${title}</div>`);
-        postElm.append(headElm);
-      }
+      let headElm = $(`<div class="title">${title}</div>`);
+      postElm.append(headElm);
     }
     if (description) postElm.append(`<div class="description">${description}</div>`);
     $('.main>.calendar').append(postElm);
   })
+}
+
+function dismissPreview() {
+  $('.previewBox').addClass('hide');
+}
+
+function viewMedia(idx) {
+  $('.previewBox').removeClass('hide');
+  let $info = $('.previewBox>.info');
+  if (MEDIAS[idx].type === 'image') {
+    $info.find('.title').html(MEDIAS[idx]?.title ?? '');
+    $info.find('.description').html(MEDIAS[idx]?.description ?? '');
+    $info.find('.description')[0].scrollTop = 0;
+    $info.find('.time').html(MEDIAS[idx]?.time ?? '');
+    $('.previewBox>.image').css('backgroundImage', `url(./media/${MEDIAS[idx].src})`);
+  }
 }
 
 function copiedAlert(msg) {
