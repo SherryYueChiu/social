@@ -10,14 +10,14 @@ var NICKNAMES = [
 ];
 var curINTRO = null;
 var INTROS = [
-  `Pre-Op TS, HRT 2Y+, GID*1
-  Pronoun: She/They
-  #RA`,
+  `Pronoun: She/They
+  Pre-Op Transgender
+  Panromantic Asexual`,
   `前端工程師
-  #逆向工程玩家`,
+  <a>#逆向工程玩家</a>`,
   `Same, same but different
   定居台中
-  #社會運動參與者 #素食者 #聲音控 #極簡主義`
+  <a>#社會運動參與者</a> <a>#素食者</a> <a>#聲音控</a> <a>#極簡主義</a>`
 ];
 
 function setAvatar() {
