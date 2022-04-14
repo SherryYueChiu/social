@@ -13,11 +13,7 @@ var CALENDAR = [
   {
     title: '高空彈跳',
     time: '2022/05/21',
-    description: '已揪一人，在桃園復興',
+    description: '已揪一人，在桃園大溪',
     link: 'https://hackmd.io/@sherryyue/Bk-1tz1N9'
-  },
-  {
-    title: '看電影',
-    description: '哈利波特新上映的那部，想揪人去'
   }
 ]
