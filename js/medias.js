@@ -1,6 +1,27 @@
 var MEDIAS = [
   {
     type: 'image',
+    title: '這個比喻好有趣',
+    time: '2022/04/12',
+    description: ``,
+    src: '1.png'
+  },
+  {
+    type: 'image',
+    title: '非常認同',
+    time: '2022/04/12',
+    description: ``,
+    src: '2.png'
+  },
+  {
+    type: 'image',
+    title: '日本摸貓頭鷹',
+    time: '2022/04/12',
+    description: `真好，台灣好像沒有這種地方`,
+    src: '3.png'
+  },
+  {
+    type: 'image',
     title: '指針式數字鐘',
     time: '2022/03/26',
     description: `最近的一個Side project，很適合在專注的時候作為手機待機畫面。
