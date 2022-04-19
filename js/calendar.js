@@ -1,10 +1,5 @@
 var CALENDAR = [
   {
-    title: '搬新家',
-    time: '2022/04/17',
-    description: '還是在東海附近'
-  },
-  {
     title: '麗寶樂園',
     time: '2022/04/23 ~ 2022/04/24',
     description: '目前是計畫自己去，會玩水陸+摩天輪+卡丁車',
