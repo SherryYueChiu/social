@@ -8,13 +8,6 @@ var MEDIAS = [
   },
   {
     type: 'image',
-    title: '非常認同',
-    time: '2022/04/12',
-    description: ``,
-    src: '2.png'
-  },
-  {
-    type: 'image',
     title: '日本摸貓頭鷹',
     time: '2022/04/12',
     description: `真好，台灣好像沒有這種地方`,
