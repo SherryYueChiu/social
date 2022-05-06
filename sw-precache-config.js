@@ -4,7 +4,8 @@ module.exports = {
         './images/**.*',
         './js/**.*',
         './css/**.*',
-        './index.html'
+        './index.html',
+        './*.ttf'
     ],
     runtimeCaching: [{
         urlPattern: /.*/,

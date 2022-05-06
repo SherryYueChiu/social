@@ -1,6 +1,16 @@
+@font-face {
+  font-family: Iansui;
+  src: url(../Iansui0.91-Regular.ttf);
+}
+
 body {
   background-color: white;
   color: black;
+  font-family: Iansui;
+}
+
+* {
+  font-family: Iansui;
 }
 
 @media (min-width: 800px) {
