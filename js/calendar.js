@@ -7,7 +7,7 @@ var CALENDAR = [
   },
   {
     title: '泳渡日月潭',
-    time: '2022/09/??',
-    description: '已揪2人，要揪到超過五人才能報名'
+    time: '2022/09/04',
+    description: '已揪2人，要至少五人才能報名'
   }
 ]
