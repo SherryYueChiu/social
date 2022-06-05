@@ -1,12 +1,12 @@
 var MEDIAS = [
   {
     type: 'image',
-    title: '開始練習游泳',
-    time: '2022/05/28',
-    description: `最近去游泳池都穿這套泳裝
-@台中市北區國民運動中心`,
-    src: 'swimmingSuit.png',
-    colorTone: '#858b8d'
+    title: '挑戰走完台灣大道',
+    time: '2022/06/05',
+    description: `25公里我們走了7個小時，鞋子沒有挑好，後面起水泡之後走得很辛苦。
+這挑戰能完成一次就夠了～`,
+    src: 'taiwanBlvdChallenge.png',
+    colorTone: '#5c81ab'
   },
   {
     type: 'video',
@@ -29,9 +29,18 @@ var MEDIAS = [
     colorTone: '#b7868f'
   },
   {
+    type: 'image',
+    title: '開始練習游泳',
+    time: '2022/05/28',
+    description: `最近去游泳池都穿這套泳裝
+@台中市北區國民運動中心`,
+    src: 'swimmingSuit.png',
+    colorTone: '#858b8d'
+  },
+  {
     type: 'video',
     title: '划船體驗',
-    time: '2022/06/03',
+    time: '2022/05/21',
     description: `@台中公園`,
     src: 'boating.mp4',
     thumbnail: 'boating.png',
