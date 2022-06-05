@@ -6,7 +6,7 @@ var CALENDAR = [
     link: 'https://hackmd.io/@sherryyue/SyfB1L8U9'
   },
   {
-    title: '水肺課程',
+    title: '水肺潛水課程',
     time: '2022/06/11～12',
     description: '@潛立方潛水旅館'
   }
