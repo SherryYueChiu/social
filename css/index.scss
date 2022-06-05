@@ -149,6 +149,13 @@ body {
       background-size: contain;
       background-position: center;
     }
+    .video {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
   }
 }
 
@@ -241,6 +248,16 @@ body {
   height: 100%;
   background-color: rgba(20, 20, 20, 0.5);
   .image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 10rem);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .video {
     position: absolute;
     left: 0;
     bottom: 0;

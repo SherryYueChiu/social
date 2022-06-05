@@ -48,13 +48,24 @@ function setMedias() {
     if (type === 'image') {
       let postElm = $(`<div class="post" idx="${idx}" onclick="viewMedia(${idx})"></div>`);
       let image = post.src;
-      postElm.append(`<div style="background-image:url(./media/${image})" class="image"></div>`);
+      postElm.append(`
+      <div style="
+      background-image:url(./media/${image});
+      background-color: ${post.colorTone};
+      " class="image">
+      </div>`);
       $('.main>.medias').append(postElm);
     }
     else if (type === 'video') {
       let postElm = $(`<div class="post" idx="${idx}" onclick="viewMedia(${idx})"></div>`);
       let image = post.thumbnail;
-      postElm.append(`<div style="background-image:url(./media/${image})" class="image"></div>`);
+      postElm.append(`
+      <div style="
+      background-image: url(./media/${image});
+      background-color: ${post.colorTone}
+
+      " class="image">
+      </div>`);
       $('.main>.medias').append(postElm);
     }
   });
@@ -106,6 +117,7 @@ function setCalendar() {
 
 function dismissPreview() {
   $('.previewBox').addClass('hide');
+  document.querySelectorAll('.previewBox video').forEach(vid => vid.pause());
 }
 
 function viewMedia(idx) {
@@ -117,6 +129,16 @@ function viewMedia(idx) {
     $info.find('.description')[0].scrollTop = 0;
     $info.find('.time').html(MEDIAS[idx]?.time ?? '');
     $('.previewBox>.image').css('backgroundImage', `url(./media/${MEDIAS[idx].src})`);
+    $('.previewBox>.video>source').attr('src', '');
+  }
+  if (MEDIAS[idx].type === 'video') {
+    $info.find('.title').html(MEDIAS[idx]?.title ?? '');
+    $info.find('.description').html(MEDIAS[idx]?.description ?? '');
+    $info.find('.description')[0].scrollTop = 0;
+    $info.find('.time').html(MEDIAS[idx]?.time ?? '');
+    $('.previewBox>.video').attr('src', `./media/${MEDIAS[idx].src}`);
+    $('.previewBox>.video').attr('poster', `./media/${MEDIAS[idx].thumbnail}`);
+    $('.previewBox>.image').css('backgroundImage', '');
   }
 }
 
