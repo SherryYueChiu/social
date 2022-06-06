@@ -360,12 +360,14 @@ body {
 }
 
 .previewBox .info > .title {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .previewBox .info > .description {
   height: 6rem;
   padding: 0 1rem 0 1rem;
+  line-height: 1.5em;
+  font-size: 1.5rem;
   text-align: left;
   white-space: pre-line;
   overflow-y: auto;
