@@ -128,17 +128,26 @@ function viewMedia(idx) {
     $info.find('.description').html(MEDIAS[idx]?.description ?? '');
     $info.find('.description')[0].scrollTop = 0;
     $info.find('.time').html(MEDIAS[idx]?.time ?? '');
-    $('.previewBox>.image').css('backgroundImage', `url(./media/${MEDIAS[idx].src})`);
-    $('.previewBox>.video>source').attr('src', '');
+    $('.previewBox>.image')
+      .css({
+        opacity: 1,
+        backgroundImage: `url(./media/${MEDIAS[idx].src})`
+      });
+    $('.previewBox>.video')
+      .css({ opacity: 0 })
+      .attr('src', '');
   }
   if (MEDIAS[idx].type === 'video') {
     $info.find('.title').html(MEDIAS[idx]?.title ?? '');
     $info.find('.description').html(MEDIAS[idx]?.description ?? '');
     $info.find('.description')[0].scrollTop = 0;
     $info.find('.time').html(MEDIAS[idx]?.time ?? '');
-    $('.previewBox>.video').attr('src', `./media/${MEDIAS[idx].src}`);
-    $('.previewBox>.video').attr('poster', `./media/${MEDIAS[idx].thumbnail}`);
-    $('.previewBox>.image').css('backgroundImage', '');
+    $('.previewBox>.video')
+      .css({ opacity: 1 })
+      .attr('src', `./media/${MEDIAS[idx].src}`)
+      .attr('poster', `./media/${MEDIAS[idx].thumbnail}`);
+    $('.previewBox>.image')
+      .css({ opacity: 0, backgroundImage: '' });
   }
 }
 
