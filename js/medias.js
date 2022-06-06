@@ -47,6 +47,16 @@ var MEDIAS = [
     colorTone: '#314a21'
   },
   {
+    type: 'video',
+    title: '練歌',
+    time: '2022/05/17',
+    description: `周興哲 以後別做朋友
+試著用很好聽的麥克風錄一首`,
+    src: 'sing220517.mp4',
+    thumbnail: 'sing220517.png',
+    colorTone: '#466ca1'
+  },
+  {
     type: 'image',
     title: '夜景咖啡廳',
     time: '2022/05/15',
