@@ -49,10 +49,10 @@ function setMedias() {
       let postElm = $(`<div class="post" idx="${idx}" onclick="viewMedia(${idx})"></div>`);
       let image = post.src;
       postElm.append(`
-      <div style="
-      background-image:url(./media/${image});
+      <div class="image lazyload" data-bgset="./media/${image}"
+      style="
       background-color: ${post.colorTone};
-      " class="image">
+      ">
       </div>`);
       $('.main>.medias').append(postElm);
     }
@@ -60,11 +60,10 @@ function setMedias() {
       let postElm = $(`<div class="post" idx="${idx}" onclick="viewMedia(${idx})"></div>`);
       let image = post.thumbnail;
       postElm.append(`
-      <div style="
-      background-image: url(./media/${image});
-      background-color: ${post.colorTone}
-
-      " class="image">
+      <div class="image lazyload" data-bgset="./media/${image}"
+      style="
+      background-color: ${post.colorTone};
+      ">
       </div>`);
       $('.main>.medias').append(postElm);
     }
