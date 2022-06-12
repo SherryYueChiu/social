@@ -1,6 +1,13 @@
 var MEDIAS = [
   {
     type: 'image',
+    title: '水肺潛水考照',
+    time: '2022/06/12',
+    description: `室內課和紙本測驗結束了，再去海洋實習就可以拿到證照和人揪去海邊潛水了～`,
+    src: 'scubaIndoor.png',
+    colorTone: '#2d7fca'
+  },{
+    type: 'image',
     title: '挑戰走完台灣大道',
     time: '2022/06/05',
     description: `25公里我們走了7個小時，鞋子沒有挑好，後面起水泡之後走得很辛苦。

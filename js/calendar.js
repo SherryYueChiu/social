@@ -7,7 +7,7 @@ var CALENDAR = [
   },
   {
     title: '水肺潛水課程',
-    time: '2022/06/11～12',
-    description: '@潛立方潛水旅館'
+    time: '2022/07/16～17',
+    description: '@墾丁後壁湖'
   }
 ]
