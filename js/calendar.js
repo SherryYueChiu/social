@@ -8,6 +8,6 @@ var CALENDAR = [
   {
     title: '水肺潛水課程',
     time: '2022/07/16～17',
-    description: '@墾丁後壁湖'
+    description: '<tag>墾丁後壁湖</tag>'
   }
 ]

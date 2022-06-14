@@ -6,6 +6,8 @@
 body {
   background-color: white;
   color: black;
+  background: #cfbeaa;
+  font-weight: 600;
   font-family: Iansui;
 }
 
@@ -203,6 +205,8 @@ body {
 .main > .medias .post {
   width: 33%;
   aspect-ratio: 1 / 1;
+  -webkit-filter: grayscale(85%);
+          filter: grayscale(85%);
 }
 
 .main > .medias .post .image {
@@ -228,11 +232,10 @@ body {
 .main > .posts .post {
   margin: 0.5rem 0 0.5rem 0;
   padding: 0.5rem 0 0.5rem 0;
-  background-color: white;
+  background-color: #a9927745;
   color: black;
   border: 1px solid #2e2e2e;
   border-radius: 0.2rem;
-  color: black;
 }
 
 .main > .posts .post .linkIcon {
@@ -247,7 +250,7 @@ body {
 
 .main > .posts .post .title {
   padding: 0 0 0.2rem 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-align: center;
   border-bottom: 1px solid #2e2e2e;
@@ -263,7 +266,7 @@ body {
   padding: 0 0.5rem 0 0;
   font-size: 0.8rem;
   text-align: end;
-  color: gray;
+  color: black;
   font-weight: bold;
 }
 
@@ -276,11 +279,10 @@ body {
   display: grid;
   margin: 0.5rem 0 0.5rem 0;
   padding: 0.5rem 0 0.5rem 0;
-  background-color: white;
+  background-color: #a9927745;
   color: black;
   border: 1px solid #2e2e2e;
   border-radius: 0.2rem;
-  color: black;
 }
 
 .main > .calendar .event .linkIcon {
@@ -295,14 +297,14 @@ body {
 
 .main > .calendar .event .title {
   padding: 0 0 0.2rem 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-align: center;
   border-bottom: 1px solid #2e2e2e;
 }
 
 .main > .calendar .event .description {
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
   line-height: 1.2rem;
   white-space: pre-line;
 }
@@ -323,7 +325,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(20, 20, 20, 0.5);
+  background-color: rgba(207, 190, 170, 0.7);
 }
 
 .previewBox .image {
@@ -331,7 +333,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: calc(100% - 10rem);
+  height: calc(100% - 12rem);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -342,7 +344,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: calc(100% - 10rem);
+  height: calc(100% - 12rem);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -351,16 +353,17 @@ body {
 .previewBox .info {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1rem 0 0.5rem 0;
+  left: 2rem;
+  width: calc(100% - 8rem);
+  padding: 1rem 2rem 0.5rem 2rem;
   background-color: white;
-  border-bottom: 4px double #2e2e2e;
+  border-bottom: 4px dashed #2e2e2e;
   text-align: center;
+  background-color: rgba(207, 190, 170, 0.8);
 }
 
 .previewBox .info > .title {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .previewBox .info > .description {
@@ -377,6 +380,15 @@ body {
   padding-right: 1rem;
   text-align: right;
   font-size: 0.8rem;
+}
+
+tag {
+  padding: 0.5rem;
+  background-color: #a99277;
+  border-radius: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .hide {
