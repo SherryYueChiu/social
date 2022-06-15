@@ -7,7 +7,6 @@ body {
   background-color: white;
   color: black;
   background: #cfbeaa;
-  font-weight: 600;
   font-family: Iansui;
 }
 
@@ -189,6 +188,7 @@ body {
     }
     .content {
       padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+      font-size: 1rem;
       line-height: 1.2rem;
       white-space: pre-line;
     }
@@ -272,8 +272,8 @@ body {
   .info {
     position: fixed;
     top: 0;
-    left: 2rem;
-    width: calc(100% - 8rem);
+    left: -1rem;
+    width: calc(100% - 2rem);
     padding: 1rem 2rem 0.5rem 2rem;
     background-color: white;
     border-bottom: 4px dashed #2e2e2e;
