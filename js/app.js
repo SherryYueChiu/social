@@ -49,7 +49,7 @@ function setMedias() {
       let postElm = $(`<div class="post" idx="${idx}" onclick="viewMedia(${idx})"></div>`);
       let image = post.src;
       postElm.append(`
-      <div class="image lazyload" data-bgset="./media/${image}"
+      <div class="image lazyload" data-bgset="./media/thumbnail/${image}"
       style="
       background-color: ${post.colorTone};
       ">
@@ -60,7 +60,7 @@ function setMedias() {
       let postElm = $(`<div class="post" idx="${idx}" onclick="viewMedia(${idx})"></div>`);
       let image = post.thumbnail;
       postElm.append(`
-      <div class="image lazyload" data-bgset="./media/${image}"
+      <div class="image lazyload" data-bgset="./media/thumbnail/${image}"
       style="
       background-color: ${post.colorTone};
       ">

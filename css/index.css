@@ -204,8 +204,6 @@ body {
 .main > .medias .post {
   width: 33%;
   aspect-ratio: 1 / 1;
-  -webkit-filter: grayscale(85%);
-          filter: grayscale(85%);
 }
 
 .main > .medias .post .image {

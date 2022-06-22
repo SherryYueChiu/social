@@ -6,6 +6,7 @@ var MEDIAS = [
     description: `室內課和紙本測驗結束了，再去海洋實習就可以拿到證照和人揪去海邊潛水了～
     <tag>潛立方潛水旅館</tag>`,
     src: 'scubaIndoor.png',
+    thumbnail: 'scubaIndoor.png',
     colorTone: '#2d7fca'
   }, {
     type: 'image',
@@ -14,6 +15,7 @@ var MEDIAS = [
     description: `25公里我們走了7個小時，鞋子沒有挑好，後面起水泡之後走得很辛苦。
 這挑戰能完成一次就夠了～`,
     src: 'taiwanBlvdChallenge.png',
+    thumbnail: 'taiwanBlvdChallenge.png',
     colorTone: '#5c81ab'
   },
   {
@@ -43,6 +45,7 @@ var MEDIAS = [
     description: `最近去游泳池都穿這套泳裝
     <tag>台中市北區國民運動中心</tag>`,
     src: 'swimmingSuit.png',
+    thumbnail: 'swimmingSuit.png',
     colorTone: '#858b8d'
   },
   {
@@ -71,6 +74,7 @@ var MEDIAS = [
     description: `這裡隨便拍都滿好看的，東西也好吃
     <tag>滔月景觀咖啡廳</tag>`,
     src: 'taoYueCoffee.png',
+    thumbnail: 'taoYueCoffee.png',
     colorTone: '#264ae6'
   },
   {
@@ -101,6 +105,7 @@ var MEDIAS = [
     description: `第一次來聽Openmic，離家很近呢，意外的還有黃亦豪，全場就他的段子最完整
     <tag>62巷青年旅館</tag>`,
     src: 'openmic.png',
+    thumbnail: 'openmic.png',
     colorTone: '#514034'
   },
   {
@@ -112,6 +117,7 @@ var MEDIAS = [
 
     <a href="https://sherryyuechiu.github.io/PointerDigitalClock">https://sherryyuechiu.github.io/PointerDigitalClock</a>`,
     src: 'pointerDigitalClock.png',
+    thumbnail: 'pointerDigitalClock.png',
     colorTone: '#FFFFFF'
   },
   {
@@ -121,6 +127,7 @@ var MEDIAS = [
     description: `除了用語很撩，還會跪下來幫你點餐？！！
     <tag>台北地下街</tag>`,
     src: 'footman.png',
+    thumbnail: 'footman.png',
     colorTone: '#cca5ab'
   },
   {
@@ -129,6 +136,7 @@ var MEDIAS = [
     time: '2022/01/22',
     description: `那些我覺得很讚的人，從端午節開始，我陸陸續續送出去一顆顆的中部粽`,
     src: 'dumplingGift.png',
+    thumbnail: 'dumplingGift.png',
     colorTone: '#b6998f'
   }
 ]
