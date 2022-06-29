@@ -1,5 +1,15 @@
 var MEDIAS = [
   {
+    type: 'video',
+    title: '玥餅+溜冰=溜餅',
+    time: '2022/06/18',
+    description: `還在練習
+<tag>Roller186溜冰場</tag>`,
+    src: 'rollerSkating.mp4',
+    thumbnail: 'rollerSkating.png',
+    colorTone: '#71411a'
+  },
+  {
     type: 'image',
     title: '水肺潛水考照',
     time: '2022/06/12',
