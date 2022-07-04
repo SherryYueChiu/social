@@ -1,6 +1,15 @@
 var MEDIAS = [
   {
     type: 'video',
+    title: '自己跑去KTV',
+    time: '2022/06/02',
+    description: `<tag>好樂迪逢甲店</tag>`,
+    src: 'sing220602.mp4',
+    thumbnail: 'sing220602.png',
+    colorTone: '#1a1f15'
+  },
+  {
+    type: 'video',
     title: '玥餅+溜冰=溜餅',
     time: '2022/06/18',
     description: `還在練習
@@ -66,16 +75,6 @@ var MEDIAS = [
     src: 'boating.mp4',
     thumbnail: 'boating.png',
     colorTone: '#314a21'
-  },
-  {
-    type: 'video',
-    title: '練歌',
-    time: '2022/05/17',
-    description: `周興哲 以後別做朋友
-試著用很好聽的麥克風錄一首`,
-    src: 'sing220517.mp4',
-    thumbnail: 'sing220517.png',
-    colorTone: '#466ca1'
   },
   {
     type: 'image',
