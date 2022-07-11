@@ -140,11 +140,11 @@ var MEDIAS = [
     colorTone: '#cca5ab'
   },
   {
-    type: 'image',
+    type: 'video',
     title: '中部粽',
     time: '2022/01/22',
     description: `那些我覺得很讚的人，從端午節開始，我陸陸續續送出去一顆顆的中部粽`,
-    src: 'dumplingGift.png',
+    src: 'dumplingGift.mp4',
     thumbnail: 'dumplingGift.png',
     colorTone: '#b6998f'
   }
