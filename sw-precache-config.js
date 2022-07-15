@@ -8,7 +8,7 @@ module.exports = {
     ],
     runtimeCaching: [{
         urlPattern: /.*/,
-        handler: 'networkFirst'
+        handler: 'fastest'
     }],
     swFile: 'service-worker.js'
 };

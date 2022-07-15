@@ -134,9 +134,10 @@ function viewMedia(idx) {
       });
     $('.previewBox>.video')
       .css({ opacity: 0 })
-      .attr('src', '');
+      .attr('src', '')
+      .attr('poster', '');
   }
-  if (MEDIAS[idx].type === 'video') {
+  else if (MEDIAS[idx].type === 'video') {
     $info.find('.title').html(MEDIAS[idx]?.title ?? '');
     $info.find('.description').html(MEDIAS[idx]?.description ?? '');
     $info.find('.description')[0].scrollTop = 0;
@@ -144,9 +145,12 @@ function viewMedia(idx) {
     $('.previewBox>.video')
       .css({ opacity: 1 })
       .attr('src', `./media/${MEDIAS[idx].src}`)
-      .attr('poster', `./media/${MEDIAS[idx].thumbnail}`);
+      .attr('poster', `./media/thumbnail/${MEDIAS[idx].thumbnail}`);
     $('.previewBox>.image')
-      .css({ opacity: 0, backgroundImage: '' });
+      .css({
+        opacity: 0,
+        backgroundImage: ''
+      });
   }
 }
 
