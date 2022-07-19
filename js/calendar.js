@@ -6,8 +6,10 @@ var CALENDAR = [
     link: 'https://hackmd.io/@sherryyue/SyfB1L8U9'
   },
   {
-    title: '水肺潛水課程',
-    time: '2022/07/16～17',
-    description: '<tag>墾丁後壁湖</tag>'
+    title: '亞洲彩虹騎行',
+    time: '2022/10/21~23',
+    description: `有點貴，不過我好想參加，如果有朋朋也衝，那我就會下定決心了
+    <tag>三天兩夜</tag><tag>自行車229公里</tag><tag>四星級溫泉飯店</tag><tag>新北宜蘭</tag>`,
+    link: 'https://www.asiarainbowride.com'
   }
 ]

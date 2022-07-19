@@ -20,12 +20,12 @@ var MEDIAS = [
   },
   {
     type: 'image',
-    title: '水肺潛水考照',
+    title: '水肺潛水OW訓練',
     time: '2022/06/12',
     description: `室內課和紙本測驗結束了，再去海洋實習就可以拿到證照和人揪去海邊潛水了～
     <tag>潛立方潛水旅館</tag>`,
-    src: 'scubaIndoor.png',
-    thumbnail: 'scubaIndoor.png',
+    src: 'DiveCubeOW.png',
+    thumbnail: 'DiveCubeOW.png',
     colorTone: '#2d7fca'
   }, {
     type: 'image',
