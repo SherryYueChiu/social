@@ -1,5 +1,16 @@
 var MEDIAS = [
   {
+    type: 'image',
+    title: '水肺潛水OW海習',
+    time: '2022/07/17',
+    description: `海洋實習完了～第一次跑到海裡面，看到了很多海鮮🤣而且<ruby style="ruby-position:under;"><rb><del>人肉</del></rb>
+    <rp>(</rp><rt>海水</rt><rp>)</rp></ruby>真的很鹹。
+    還交到新朋友！或許之後也會繼續潛，甚至繼續往進階的考。
+    <tag>墾丁後壁湖</tag>`,
+    src: 'KengDingOW.png',
+    thumbnail: 'KengDingOW.png',
+    colorTone: '#2d7fca'
+  }, {
     type: 'video',
     title: '自己跑去KTV',
     time: '2022/06/02',
