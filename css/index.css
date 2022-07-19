@@ -381,6 +381,7 @@ body {
 }
 
 tag {
+  display: inline-block;
   padding: 0.5rem;
   background-color: #a99277;
   border-radius: 0.5rem;
