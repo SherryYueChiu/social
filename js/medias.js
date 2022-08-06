@@ -109,10 +109,10 @@ var MEDIAS = [
   },
   {
     type: 'video',
-    title: '風洞體驗',
+    title: '室內跳傘體驗',
     time: '2022/04/23',
-    description: `原本是想水陸+卡丁車+風洞用兩天全部攻略，不過水樂園還沒開放，只好等暑假了。
-這個風洞以後有機會成為奧運項目呦！
+    description: `原本是想水陸+卡丁車+風洞（室內跳傘）用兩天全部攻略，不過水樂園還沒開放，只好等暑假了。
+室內跳傘以後有機會成為奧運項目呦！
 <tag>麗寶樂園</tag>`,
     src: 'bodyflight.mp4',
     thumbnail: 'bodyflight.png',
