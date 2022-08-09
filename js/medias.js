@@ -1,5 +1,32 @@
 var MEDIAS = [
   {
+    type: 'video',
+    title: '逛逛彩虹市集',
+    time: '2022/08/07',
+    description: `<tag>基好事吉 彩虹市集</tag><tag>台中火車站廣場</tag>`,
+    src: 'JiHaoShiJi220807.mp4',
+    thumbnail: 'JiHaoShiJi220807.png',
+    colorTone: '#1d6385'
+  },
+  {
+    type: 'video',
+    title: '水上溜滑梯～',
+    time: '2022/08/07',
+    description: `<tag>寶成游泳池</tag>`,
+    src: 'BaoChengSwimmingPool220807.mp4',
+    thumbnail: 'BaoChengSwimmingPool220807.png',
+    colorTone: '#1d6385'
+  },
+  {
+    type: 'video',
+    title: '溜滑梯很好玩噠',
+    time: '2022/08/06',
+    description: `<tag>新時代大魯閣•空中飛梯</tag>`,
+    src: 'KongZhongFeiTi220806.mp4',
+    thumbnail: 'KongZhongFeiTi220806.png',
+    colorTone: '#7d6957'
+  },
+  {
     type: 'image',
     title: '水肺潛水OW海習',
     time: '2022/07/17',
@@ -10,7 +37,8 @@ var MEDIAS = [
     src: 'KengDingOW.png',
     thumbnail: 'KengDingOW.png',
     colorTone: '#2d7fca'
-  }, {
+  },
+  {
     type: 'video',
     title: '自己跑去KTV',
     time: '2022/06/02',
