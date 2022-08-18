@@ -17,7 +17,7 @@ var INTROS = [
   <a>#逆向工程玩家</a>`,
   `Same, same but different
   定居台中
-  <a>#社會運動參與者</a> <a>#素食者</a> <a>#聲音控</a> <a>#極簡主義</a>`
+  <a>#社會運動參與者</a> <a>#素食者</a> <a>#聲音控</a> <a>#極簡主義</a> <a>#INFP</a>`
 ];
 
 function setAvatar() {
