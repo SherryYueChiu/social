@@ -1,6 +1,26 @@
 var MEDIAS = [
   {
     type: 'video',
+    title: '數字聊心體驗',
+    time: '2022/08/20',
+    description: `今天在市集體驗了Miranda心輪療癒的數字聊心，感到很舒適而且聊了很多～
+    其實之前在火車站前就有想瞭解，不過到今天才鼓起勇氣在攤前坐下
+    <tag>基好市集 彩虹市集</tag><tag>北屯新村</tag>`,
+    src: 'JiHaoShiJi220820.mp4',
+    thumbnail: 'JiHaoShiJi220820.png',
+    colorTone: '#3f4c31'
+  },
+  {
+    type: 'video',
+    title: 'APP修改示範',
+    time: '2022/08/14',
+    description: `安卓App破解隨手錄🐦`,
+    src: 'APK_mod220814.mp4',
+    thumbnail: 'APK_mod220814.png',
+    colorTone: '#2a2a2a'
+  },
+  {
+    type: 'video',
     title: '逛逛彩虹市集',
     time: '2022/08/07',
     description: `<tag>基好事吉 彩虹市集</tag><tag>台中火車站廣場</tag>`,
@@ -75,6 +95,15 @@ var MEDIAS = [
     src: 'taiwanBlvdChallenge.png',
     thumbnail: 'taiwanBlvdChallenge.png',
     colorTone: '#5c81ab'
+  },
+  {
+    type: 'video',
+    title: '飛行傘體驗',
+    time: '2022/06/04',
+    description: `<tag>虎嘯山莊</tag>`,
+    src: 'paragliding.mp4',
+    thumbnail: 'paragliding.png',
+    colorTone: '#8b9db1'
   },
   {
     type: 'video',
