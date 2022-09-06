@@ -1,6 +1,17 @@
 var MEDIAS = [
   {
     type: 'video',
+    title: '泳渡日月潭',
+    time: '2022/09/04',
+    description: `還在泳池游25公尺氣喘吁吁的時候真的沒想過能游超過一公里耶。
+    也很感謝小夥伴們的+1，在颱風天參與這種壯舉
+    <tag>泳渡日月潭</tag><tag>台灣人必做三件事</tag>`,
+    src: 'SunMoonLakeSwimming220904.mp4',
+    thumbnail: 'SunMoonLakeSwimming220904.png',
+    colorTone: '#c3d8ed'
+  },
+  {
+    type: 'video',
     title: '數字聊心體驗',
     time: '2022/08/20',
     description: `今天在市集體驗了Miranda心輪療癒的數字聊心，感到很舒適而且聊了很多～
