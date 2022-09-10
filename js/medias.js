@@ -1,6 +1,16 @@
 var MEDIAS = [
   {
     type: 'video',
+    title: '韓式證件照',
+    time: '2022/09/11',
+    description: `拍完自己都覺得陌生🤣
+    <tag>韓式證件照</tag><tag>Holo+Face</tag>`,
+    src: 'HoloFace220911.mp4',
+    thumbnail: 'HoloFace220911.png',
+    colorTone: '#cbc3af'
+  },
+  {
+    type: 'video',
     title: '泳渡日月潭',
     time: '2022/09/04',
     description: `還在泳池游25公尺氣喘吁吁的時候真的沒想過能游超過一公里耶。
