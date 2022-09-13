@@ -1,6 +1,17 @@
 var MEDIAS = [
   {
     type: 'video',
+    title: '清新溫泉',
+    time: '2022/09/13',
+    description: `我又跑來泡溫泉了～這邊的水質很棒，泡起來也很舒服，還嘗試了一下冷一下熱的泡。
+    住宿就沒有了，五星級飯店太貴🤣
+    <tag>清新溫泉</tag>`,
+    src: 'QingXinHotSpring220913.mp4',
+    thumbnail: 'QingXinHotSpring220913.png',
+    colorTone: '#cbc3af'
+  },
+  {
+    type: 'video',
     title: '韓式證件照',
     time: '2022/09/11',
     description: `拍完自己都覺得陌生🤣
