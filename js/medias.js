@@ -1,6 +1,24 @@
 var MEDIAS = [
   {
     type: 'video',
+    title: '遠距合唱系列',
+    time: '2022/09/18',
+    description: `李芷婷-你聽聽就好`,
+    src: 'sing220918.mp4',
+    thumbnail: 'sing220918.png',
+    colorTone: '#313540'
+  },
+  {
+    type: 'video',
+    title: '刀療體驗',
+    time: '2022/09/18',
+    description: `逛市集的時候發現他們提供公益體驗，然後我就來初體驗了～`,
+    src: 'knifeHealing220918.mp4',
+    thumbnail: 'knifeHealing220918.png',
+    colorTone: '#6c6157'
+  },
+  {
+    type: 'video',
     title: '清新溫泉',
     time: '2022/09/13',
     description: `我又跑來泡溫泉了～這邊的水質很棒，泡起來也很舒服，還嘗試了一下冷一下熱的泡。
