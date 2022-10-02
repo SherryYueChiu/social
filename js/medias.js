@@ -1,6 +1,30 @@
 var MEDIAS = [
   {
     type: 'video',
+    title: '日光溫泉',
+    time: '2022/10/02',
+    description: `傷眼了抱歉蛤🤣🦥
+    這間日光溫泉真的漂釀，而且也有無障礙空間
+    但我還是更愛清新啦～清新離家超近的，而且色調很暖
+    下次要去的話或許可以先爬大坑步道，就在旁邊而已
+    <tag>日光溫泉會館</tag><tag>有無障礙空間</tag>`,
+    src: 'theSunHotSpring221001.mp4',
+    thumbnail: 'theSunHotSpring221001.png',
+    colorTone: '#c3b59f'
+  },
+  {
+    type: 'video',
+    title: '公園裡有很高的溜滑梯',
+    time: '2022/09/29',
+    description: `還要爬步道樓梯或是梯子上去呢
+    溜滑梯賽高～謝謝郁晴帶我來這
+    <tag>水之丘主題公園</tag><tag>溜滑梯</tag>`,
+    src: 'slide220929.mp4',
+    thumbnail: 'slide220929.png',
+    colorTone: '#cfe2f3'
+  },
+  {
+    type: 'video',
     title: '遠距合唱系列',
     time: '2022/09/18',
     description: `李芷婷-你聽聽就好`,
@@ -23,7 +47,7 @@ var MEDIAS = [
     time: '2022/09/13',
     description: `我又跑來泡溫泉了～這邊的水質很棒，泡起來也很舒服，還嘗試了一下冷一下熱的泡。
     住宿就沒有了，五星級飯店太貴🤣
-    <tag>清新溫泉</tag>`,
+    <tag>清新溫泉</tag><tag>有無障礙空間</tag>`,
     src: 'QingXinHotSpring220913.mp4',
     thumbnail: 'QingXinHotSpring220913.png',
     colorTone: '#cbc3af'
