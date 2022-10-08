@@ -1,6 +1,15 @@
 var MEDIAS = [
   {
     type: 'video',
+    title: '全世界都是泡泡～',
+    time: '2022/10/07',
+    description: ``,
+    src: 'bubbles221007.mp4',
+    thumbnail: 'bubbles221007.png',
+    colorTone: '#71705e'
+  },
+  {
+    type: 'video',
     title: '日光溫泉',
     time: '2022/10/02',
     description: `傷眼了抱歉蛤🤣🦥
