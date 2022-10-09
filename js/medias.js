@@ -1,6 +1,36 @@
 var MEDIAS = [
   {
     type: 'video',
+    title: '來咖啡廳chill一下',
+    time: '2022/10/09',
+    description: `來咖啡廳chill一下
+    全世界都在忙，就我在這邊悠哉
+    店名太可愛了所以來這
+    <tag>Two兔夜景咖啡廳</tag>`,
+    src: 'twocafe221009.mp4',
+    thumbnail: 'twocafe221009.png',
+    colorTone: '#5d584b'
+  },
+  {
+    type: 'video',
+    title: '飆車囉',
+    time: '2022/10/09',
+    description: `<tag>麗寶國際賽車場</tag>`,
+    src: 'lipaoRacing221009.mp4',
+    thumbnail: 'lipaoRacing221009.png',
+    colorTone: '#675f60'
+  },
+  {
+    type: 'video',
+    title: '你們的311小記者已經上線',
+    time: '2022/10/09',
+    description: `<tag>麗寶樂園馬拉灣</tag>`,
+    src: 'lipaoMala221009.mp4',
+    thumbnail: 'lipaoMala221009.png',
+    colorTone: '#d0c7c3'
+  },
+  {
+    type: 'video',
     title: '全世界都是泡泡～',
     time: '2022/10/07',
     description: ``,
