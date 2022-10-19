@@ -3,7 +3,7 @@ var CALENDAR = [
     title: '豪華露營',
     time: '？？？',
     description: `我想去豪華露營，應該會在台中，想+1的話和我說～
-    <a href="https://hackmd.io/@sherryyue/HJOmIv2ls">蒐集的資料</a>`
+    <a href="https://travel.yam.com/article/125564">蒐集的資料</a>`
   },
   {
     title: '南投體驗活動',
