@@ -1,6 +1,28 @@
 var MEDIAS = [
   {
     type: 'video',
+    title: '卡丁車',
+    time: '2022/10/22',
+    description: `又來挑戰麗寶的卡丁賽車了
+這次有進步，時間內跑了8圈，上次只有6圈
+不過仍然是第六名，前面的像怪物一樣🤣
+#三刷麗寶卡丁賽車
+    <tag>麗寶卡丁賽車</tag>`,
+    src: 'LiPaoKart221022.mp4',
+    thumbnail: 'LiPaoKart221022.png',
+    colorTone: '#545354'
+  },
+  {
+    type: 'video',
+    title: '美美的忘憂谷',
+    time: '2022/10/22',
+    description: `<tag>外埔忘憂谷</tag>`,
+    src: 'TaichungWanYouGu221022.mp4',
+    thumbnail: 'TaichungWanYouGu221022.png',
+    colorTone: '#aebdc4'
+  },
+  {
+    type: 'video',
     title: '來咖啡廳chill一下',
     time: '2022/10/09',
     description: `來咖啡廳chill一下
@@ -10,15 +32,6 @@ var MEDIAS = [
     src: 'twocafe221009.mp4',
     thumbnail: 'twocafe221009.png',
     colorTone: '#5d584b'
-  },
-  {
-    type: 'video',
-    title: '飆車囉',
-    time: '2022/10/09',
-    description: `<tag>麗寶國際賽車場</tag>`,
-    src: 'lipaoRacing221009.mp4',
-    thumbnail: 'lipaoRacing221009.png',
-    colorTone: '#675f60'
   },
   {
     type: 'video',
