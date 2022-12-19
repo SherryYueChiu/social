@@ -1,0 +1,7 @@
+{
+    "name": "social",
+    "scripts": {
+      "sw": "sw-precache --config=sw-precache-config.js"
+    }
+  }
+  
