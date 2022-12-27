@@ -44,29 +44,15 @@ function setRecommended() {
 
 function setMedias() {
   MEDIAS.forEach((post, idx) => {
-    let type = post.type;
-    if (type === 'image') {
-      let postElm = $(`<div class="post" idx="${idx}" onclick="viewMedia(${idx})"></div>`);
-      let image = post.src;
-      postElm.append(`
+    let postElm = $(`<div class="post" idx="${idx}" onclick="viewMedia(${idx})"></div>`);
+    let image = post.thumbnail;
+    postElm.append(`
       <div class="image lazyload" data-bgset="./media/thumbnail/${image}"
       style="
       background-color: ${post.colorTone};
       ">
       </div>`);
-      $('.main>.medias').append(postElm);
-    }
-    else if (type === 'video') {
-      let postElm = $(`<div class="post" idx="${idx}" onclick="viewMedia(${idx})"></div>`);
-      let image = post.thumbnail;
-      postElm.append(`
-      <div class="image lazyload" data-bgset="./media/thumbnail/${image}"
-      style="
-      background-color: ${post.colorTone};
-      ">
-      </div>`);
-      $('.main>.medias').append(postElm);
-    }
+    $('.main>.medias').append(postElm);
   });
 }
 
@@ -119,40 +105,64 @@ function dismissPreview() {
   document.querySelectorAll('.previewBox video').forEach(vid => vid.pause());
 }
 
-function viewMedia(idx) {
+function viewMedia(idx, page = 0) {
   $('.previewBox').removeClass('hide');
+  $('.previewBox').attr('page', page);
   let $info = $('.previewBox>.info');
-  if (MEDIAS[idx].type === 'image') {
-    $info.find('.title').html(MEDIAS[idx]?.title ?? '');
-    $info.find('.description').html(MEDIAS[idx]?.description ?? '');
+  let post = MEDIAS[idx];
+  if (post.media[page].type === 'image') {
+    $info.find('.title').html(post?.title ?? '');
+    $info.find('.description').html(post?.description ?? '');
     $info.find('.description')[0].scrollTop = 0;
-    $info.find('.time').html(MEDIAS[idx]?.time ?? '');
+    $info.find('.time').html(post?.time ?? '');
     $('.previewBox>.image')
       .css({
         opacity: 1,
-        backgroundImage: `url(./media/${MEDIAS[idx].src})`
+        backgroundImage: `url(./media/${post.media[page].src})`
       });
     $('.previewBox>.video')
       .css({ opacity: 0 })
       .attr('src', '')
       .attr('poster', '');
   }
-  else if (MEDIAS[idx].type === 'video') {
-    $info.find('.title').html(MEDIAS[idx]?.title ?? '');
-    $info.find('.description').html(MEDIAS[idx]?.description ?? '');
+  else if (post.media[page].type === 'video') {
+    $info.find('.title').html(post?.title ?? '');
+    $info.find('.description').html(post?.description ?? '');
     $info.find('.description')[0].scrollTop = 0;
-    $info.find('.time').html(MEDIAS[idx]?.time ?? '');
+    $info.find('.time').html(post?.time ?? '');
     $('.previewBox>.video')
       .css({ opacity: 1 })
-      .attr('src', `./media/${MEDIAS[idx].src}`)
-      .attr('poster', `./media/thumbnail/${MEDIAS[idx].thumbnail}`);
+      .attr('src', `./media/${post.media[page].src}`)
+      .attr('poster', `./media/thumbnail/${post.media[page].thumbnail}`);
     $('.previewBox>.image')
       .css({
         opacity: 0,
         backgroundImage: ''
       });
   }
+  // 顯示換頁鈕
+  if (page <= 0) {
+    $('.previewBox>.prev').addClass('hide');
+  } else {
+    $('.previewBox>.prev').removeClass('hide');
+  }
+  if (page >= post.media.length - 1) {
+    $('.previewBox>.next').addClass('hide');
+  } else {
+    $('.previewBox>.next').removeClass('hide');
+  }
 }
+
+function previewPrevPage() {
+  let curPage = parseInt($('.previewBox').attr('page'));
+  viewMedia(curPage - 1);
+}
+
+function previewNextPage() {
+  let curPage = parseInt($('.previewBox').attr('page'));
+  viewMedia(curPage + 1);
+}
+
 
 function copiedAlert(msg) {
   Swal.fire(msg);

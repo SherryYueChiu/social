@@ -96,7 +96,7 @@
             </div>
         </div>
 
-        <div class="previewBox hide" onclick="dismissPreview()">
+        <div class="previewBox hide">
             <div class="image"></div>
             <video class="video" autoplay loop controls preload="auto"> </video>
             <div class="info">
@@ -106,6 +106,8 @@
                 <div class="description"></div>
                 <div class="time"></div>
             </div>
+            <div class="prev" onclick="previewPrevPage()">◀</div>
+            <div class="next" onclick="previewNextPage()">▶</div>
         </div>
     </div>
     <script src="./js/index.js"></script>
