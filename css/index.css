@@ -29,9 +29,9 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 120px auto;
-  grid-template-columns: 120px auto;
+      grid-template-columns: 120px auto;
   -ms-grid-rows: 3rem auto;
-  grid-template-rows: 3rem auto;
+      grid-template-rows: 3rem auto;
   margin: 0.5rem;
 }
 
@@ -60,9 +60,9 @@ body {
   margin: 1rem 0 1rem 0;
   font-weight: bold;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .main .info .intro {
@@ -87,11 +87,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 2rem;
   border: 1px solid black;
@@ -109,16 +109,16 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 2rem;
 }
@@ -128,11 +128,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 33%;
   margin: 0.1rem;
   padding: 1rem 0 0.5rem 0;
@@ -143,7 +143,7 @@ body {
 .main .paginator > *.blur {
   border-bottom: 1px solid black;
   -webkit-filter: contrast(0.2);
-  filter: contrast(0.2);
+          filter: contrast(0.2);
 }
 
 .contactOptionsContainer .overlay {
@@ -163,14 +163,14 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+      flex-wrap: nowrap;
   bottom: 0;
   width: 100%;
   -webkit-transform: translateX(-0.5rem);
-  transform: translateX(-0.5rem);
+          transform: translateX(-0.5rem);
   margin: auto;
   background-color: #262626;
   color: aliceblue;
@@ -194,10 +194,10 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 1rem;
 }
 
@@ -242,7 +242,7 @@ body {
   margin-bottom: -2rem;
   color: #181818;
   -webkit-filter: drop-shadow(3px 3px 1px #111);
-  filter: drop-shadow(3px 3px 1px #111);
+          filter: drop-shadow(3px 3px 1px #111);
 }
 
 .main > .posts .post .title {
@@ -290,7 +290,7 @@ body {
   margin-bottom: -2rem;
   color: #181818;
   -webkit-filter: drop-shadow(3px 3px 1px #111);
-  filter: drop-shadow(3px 3px 1px #111);
+          filter: drop-shadow(3px 3px 1px #111);
 }
 
 .main > .calendar .event .title {
@@ -361,14 +361,15 @@ body {
 }
 
 .previewBox .info > .title {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  max-width: 95%;
 }
 
 .previewBox .info > .description {
-  height: 5.5rem;
+  height: 6.2rem;
   padding: 0 1rem 0 1rem;
   line-height: 1.5em;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: left;
   white-space: pre-line;
   overflow-y: auto;
@@ -385,7 +386,6 @@ body {
   right: 1rem;
   top: 0rem;
   padding: 1rem;
-  cursor: pointer;
 }
 
 tag {
@@ -394,7 +394,7 @@ tag {
   background-color: #a99277;
   border-radius: 0.5rem;
   -webkit-margin-end: 0.5rem;
-  margin-inline-end: 0.5rem;
+          margin-inline-end: 0.5rem;
   font-size: 1.2rem;
 }
 
