@@ -107,7 +107,9 @@ function dismissPreview() {
 
 function viewMedia(idx, page = 0) {
   $('.previewBox').removeClass('hide');
+  $('.previewBox').attr('idx', idx);
   $('.previewBox').attr('page', page);
+  
   let $info = $('.previewBox>.info');
   let post = MEDIAS[idx];
   if (post.media[page].type === 'image') {
@@ -154,13 +156,15 @@ function viewMedia(idx, page = 0) {
 }
 
 function previewPrevPage() {
+  let postIdx = parseInt($('.previewBox').attr('idx'));
   let curPage = parseInt($('.previewBox').attr('page'));
-  viewMedia(curPage - 1);
+  viewMedia(postIdx,curPage - 1);
 }
 
 function previewNextPage() {
+  let postIdx = parseInt($('.previewBox').attr('idx'));
   let curPage = parseInt($('.previewBox').attr('page'));
-  viewMedia(curPage + 1);
+  viewMedia(postIdx,curPage + 1);
 }
 
 

@@ -1,6 +1,50 @@
 /** @type MediaPost[] */
 var MEDIAS = [
   {
+    title: '女僕咖啡廳',
+    description: `第一次去女僕咖啡廳，我還唸了讓食物變好吃咒語🐸
+    話說我已經去兩次台中的執事咖啡廳了，卻一直沒看到執事
+    我的執事呢？？
+    <tag>心跳女僕咖啡廳</tag>`,
+    thumbnail: 'DokiMaidCafe221225.png',
+    colorTone: '#aaaea0',
+    time: '2022/10/25',
+    media: [
+      {
+        type: 'video',
+        src: 'DokiMaidCafe221225_1.mp4',
+        thumbnail: 'DokiMaidCafe221225.png'
+      }, {
+        type: 'image',
+        src: 'DokiMaidCafe221225_2.png'
+      }, {
+        type: 'image',
+        src: 'DokiMaidCafe221225_3.png'
+      }, {
+        type: 'image',
+        src: 'DokiMaidCafe221225_4.png'
+      }
+    ]
+  },
+  {
+    title: '肖像履歷照',
+    description: `年初看到有人去拍肖像照，我就也很想去拍
+    拍完總感覺有競選或推銷的味道
+    <tag>春山相館</tag>`,
+    thumbnail: 'chunshanPhoto221225.png',
+    colorTone: '#f8dec7',
+    time: '2022/10/25',
+    media: [
+      {
+        type: 'image',
+        src: 'chunshanPhoto221225_1.png'
+      }, {
+        type: 'image',
+        src: 'chunshanPhoto221225_2.png'
+      }
+    ]
+  },
+  {
     title: '卡丁車',
     description: `又來挑戰麗寶的卡丁賽車了
 這次有進步，時間內跑了8圈，上次只有6圈
