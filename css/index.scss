@@ -26,6 +26,10 @@ body {
 }
 
 .main {
+  &.blur{
+    filter: blur(5px);
+  }
+  
   .info {
     display: grid;
     grid-template-columns: 120px auto;
@@ -141,6 +145,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 1rem;
+
   .post {
     width: 33%;
     aspect-ratio: 1 / 1;

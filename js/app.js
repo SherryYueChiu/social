@@ -101,15 +101,18 @@ function setCalendar() {
 }
 
 function dismissPreview() {
+  $('.main').removeClass('blur');
   $('.previewBox').addClass('hide');
   document.querySelectorAll('.previewBox video').forEach(vid => vid.pause());
 }
 
 function viewMedia(idx, page = 0) {
+  $('.main').addClass('blur');
   $('.previewBox').removeClass('hide');
+
   $('.previewBox').attr('idx', idx);
   $('.previewBox').attr('page', page);
-  
+
   let $info = $('.previewBox>.info');
   let post = MEDIAS[idx];
   if (post.media[page].type === 'image') {
@@ -158,13 +161,13 @@ function viewMedia(idx, page = 0) {
 function previewPrevPage() {
   let postIdx = parseInt($('.previewBox').attr('idx'));
   let curPage = parseInt($('.previewBox').attr('page'));
-  viewMedia(postIdx,curPage - 1);
+  viewMedia(postIdx, curPage - 1);
 }
 
 function previewNextPage() {
   let postIdx = parseInt($('.previewBox').attr('idx'));
   let curPage = parseInt($('.previewBox').attr('page'));
-  viewMedia(postIdx,curPage + 1);
+  viewMedia(postIdx, curPage + 1);
 }
 
 
