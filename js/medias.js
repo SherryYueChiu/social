@@ -1,6 +1,122 @@
 /** @type MediaPost[] */
 var MEDIAS = [
   {
+    title: '望景夜景咖啡廳',
+    description: `這邊的夜景視野超好！而且提供的素食餐點也滿多料的很豐盛
+    <tag>望景夜景咖啡廳</tag>`,
+    thumbnail: 'wangJingCoffee230106.png',
+    colorTone: '#66453e',
+    time: '2023/01/01',
+    media: [
+      {
+        type: 'image',
+        src: 'wangJingCoffee230106.png'
+      }, {
+        type: 'image',
+        src: 'wangJingCoffee230106_2.png'
+      }, {
+        type: 'image',
+        src: 'wangJingCoffee230106_3.png'
+      }, {
+        type: 'image',
+        src: 'wangJingCoffee230106_4.png'
+      }
+    ]
+  },
+  {
+    title: '1683夜景咖啡廳',
+    description: `最近一直探索家附近的夜景咖啡廳。今天來到的是這間，就...還行。
+    不過的確很好拍
+    <tag>1683夜景咖啡廳</tag>`,
+    thumbnail: '1683Coffee230105.png',
+    colorTone: '#66453e',
+    time: '2023/01/01',
+    media: [
+      {
+        type: 'image',
+        src: '1683Coffee230105.png'
+      }, {
+        type: 'video',
+        src: '1683Coffee230105_2.mp4',
+        thumbnail: '1683Coffee230105_2.png'
+      }, {
+        type: 'image',
+        src: '1683Coffee230105_3.png'
+      }
+    ]
+  },
+  {
+    title: '泡腳咖啡廳',
+    description: `除了泡溫泉，泡腳似乎也很不錯呢。
+    很推貓頭鷹廣場，而附近的『山中居』就很不推了，超級普通
+    <tag>貓頭鷹廣場</tag>`,
+    thumbnail: 'maoTouYingSquare230102.png',
+    colorTone: '#66453e',
+    time: '2023/01/01',
+    media: [
+      {
+        type: 'image',
+        src: 'maoTouYingSquare230102.png'
+      }, {
+        type: 'video',
+        src: 'maoTouYingSquare230102_2.mp4',
+        thumbnail: 'maoTouYingSquare230102_2.png'
+      }, {
+        type: 'video',
+        src: 'maoTouYingSquare230102_3.mp4',
+        thumbnail: 'maoTouYingSquare230102_3.png'
+      }
+    ]
+  },
+  {
+    title: '柳川聖誕水舞秀',
+    description: `謝謝台中，讓我平常有很多很棒地方可以去。
+    這水舞真的很有水準，很美`,
+    thumbnail: 'liuChuan230101.png',
+    colorTone: '#66453e',
+    time: '2023/01/01',
+    media: [
+      {
+        type: 'video',
+        src: 'liuChuan230101.mp4',
+        thumbnail: 'liuChuan230101_1.png'
+      }, {
+        type: 'image',
+        src: 'liuChuan230101_2.png'
+      }, {
+        type: 'video',
+        src: 'liuChuan230101_3.mp4',
+        thumbnail: 'liuChuan230101_3.png'
+      }
+    ]
+  },
+  {
+    title: '第一次參加跨年盛事',
+    description: `剛好台中的卡司好像還是最多人喜歡的。
+    覺得最後一兩組很可憐，大家看完林宥嘉就快跑光了，他們就目送人潮退去。`,
+    thumbnail: 'centralPark221231.png',
+    colorTone: '#070908',
+    time: '2022/12/31',
+    media: [
+      {
+        type: 'image',
+        src: 'centralPark221231.png'
+      }, {
+        type: 'video',
+        src: 'centralPark221231_2.mp4',
+        thumbnail: 'centralPark221231_2.png'
+      }, {
+        type: 'video',
+        src: 'centralPark221231_3.mp4',
+        thumbnail: 'centralPark221231_3.png'
+      }, {
+        type: 'video',
+        src: 'centralPark221231_4.mp4',
+        thumbnail: 'centralPark221231_4.png'
+      }
+    ]
+  },
+  {
     title: '女僕咖啡廳',
     description: `第一次去女僕咖啡廳，我還唸了讓食物變好吃咒語🐸
     話說我已經去兩次台中的執事咖啡廳了，卻一直沒看到執事
