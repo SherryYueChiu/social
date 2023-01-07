@@ -1,11 +1,28 @@
 /** @type MediaPost[] */
 var MEDIAS = [
   {
+    title: '拍貼機拍起來',
+    description: `看到出門玩拍貼機當打卡就也很想跟一波。
+    於是最近就跑到東海和逢甲各來了一張`,
+    thumbnail: 'photoBoth230107.png',
+    colorTone: '#9b8fa0',
+    time: '2023/01/07',
+    media: [
+      {
+        type: 'image',
+        src: 'photoBoth230107.png'
+      }, {
+        type: 'image',
+        src: 'photoBoth230107_2.png'
+      }
+    ]
+  },
+  {
     title: '望景夜景咖啡廳',
     description: `這邊的夜景視野超好！而且提供的素食餐點也滿多料的很豐盛
     <tag>望景夜景咖啡廳</tag>`,
     thumbnail: 'wangJingCoffee230106.png',
-    colorTone: '#66453e',
+    colorTone: '#544e42',
     time: '2023/01/01',
     media: [
       {
@@ -29,7 +46,7 @@ var MEDIAS = [
     不過的確很好拍
     <tag>1683夜景咖啡廳</tag>`,
     thumbnail: '1683Coffee230105.png',
-    colorTone: '#66453e',
+    colorTone: '#09080e',
     time: '2023/01/01',
     media: [
       {
@@ -51,7 +68,7 @@ var MEDIAS = [
     很推貓頭鷹廣場，而附近的『山中居』就很不推了，超級普通
     <tag>貓頭鷹廣場</tag>`,
     thumbnail: 'maoTouYingSquare230102.png',
-    colorTone: '#66453e',
+    colorTone: '#57463e',
     time: '2023/01/01',
     media: [
       {
@@ -73,7 +90,7 @@ var MEDIAS = [
     description: `謝謝台中，讓我平常有很多很棒地方可以去。
     這水舞真的很有水準，很美`,
     thumbnail: 'liuChuan230101.png',
-    colorTone: '#66453e',
+    colorTone: '#06021b',
     time: '2023/01/01',
     media: [
       {
@@ -93,9 +110,9 @@ var MEDIAS = [
   {
     title: '第一次參加跨年盛事',
     description: `剛好台中的卡司好像還是最多人喜歡的。
-    覺得最後一兩組很可憐，大家看完林宥嘉就快跑光了，他們就目送人潮退去。`,
+    覺得最後一兩組很可憐，大家看完林宥嘉就快跑光了，在快到的路上根本還沒上台，就先目送人潮開始消失。`,
     thumbnail: 'centralPark221231.png',
-    colorTone: '#070908',
+    colorTone: '#171e24',
     time: '2022/12/31',
     media: [
       {
