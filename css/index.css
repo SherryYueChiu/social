@@ -395,8 +395,9 @@ body {
 
 .previewBox .prev {
   position: fixed;
-  left: 0.5rem;
+  left: 0rem;
   top: 60%;
+  padding: 2rem;
   color: aliceblue;
   font-size: xx-large;
   text-shadow: 5px 5px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -410,8 +411,9 @@ body {
 
 .previewBox .next {
   position: fixed;
-  right: 0.5rem;
+  right: 0rem;
   top: 60%;
+  padding: 2rem;
   color: aliceblue;
   font-size: xx-large;
   text-shadow: 5px 5px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
