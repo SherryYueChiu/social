@@ -70,6 +70,30 @@ var MEDIAS = [
     ]
   },
   {
+    title: '啡文學',
+    description: `這間的夜景也是出奇的好，而且營業時間超晚，可以放心的一直坐下去👻
+    <tag>啡文學夜景咖啡廳</tag>`,
+    thumbnail: 'feiWenXue230106.png',
+    colorTone: '#06050d',
+    time: '2023/01/06',
+    media: [
+      {
+        type: 'video',
+        src: 'feiWenXue230106_1.mp4',
+        thumbnail: 'feiWenXue230106_1.png'
+      }, {
+        type: 'image',
+        src: 'feiWenXue230106_2.png'
+      }, {
+        type: 'image',
+        src: 'feiWenXue230106_3.png'
+      }, {
+        type: 'image',
+        src: 'feiWenXue230106_4.png'
+      }
+    ]
+  },
+  {
     title: '望景夜景咖啡廳',
     description: `這邊的夜景視野超好！而且提供的素食餐點也滿多料的很豐盛
     <tag>望景夜景咖啡廳</tag>`,
