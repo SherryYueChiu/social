@@ -1,6 +1,31 @@
 /** @type MediaPost[] */
 var MEDIAS = [
   {
+    title: '鹿雅森林',
+    description: `這裡最知名的是寵物友善，大家會帶著自己的狗狗來。
+    很不巧的，夜景看著看著突然四周起大霧，下山時差點什麼也看不見。`,
+    thumbnail: 'luYaCoffee230108.png',
+    colorTone: '#9b8fa0',
+    time: '2023/01/07',
+    media: [
+      {
+        type: 'video',
+        src: 'luYaCoffee230108_1.mp4',
+        thumbnail: 'luYaCoffee230108_1.png'
+      }, {
+        type: 'image',
+        src: 'luYaCoffee230108_2.png'
+      }, {
+        type: 'video',
+        src: 'luYaCoffee230108_3.mp4',
+        thumbnail: 'luYaCoffee230108_3.png'
+      }, {
+        type: 'image',
+        src: 'luYaCoffee230108_4.png'
+      }
+    ]
+  },
+  {
     title: '拍貼機拍起來',
     description: `看到出門玩拍貼機當打卡就也很想跟一波。
     於是最近就跑到東海和逢甲各來了一張`,
