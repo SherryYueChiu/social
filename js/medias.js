@@ -1,6 +1,22 @@
 /** @type MediaPost[] */
 var MEDIAS = [
   {
+    title: '愛泡咖休閒廣場',
+    description: `之前出門泡泡腳都要去到彰化，沒想到沙鹿也有一間。
+    太好了，這樣以後也不一定要跑這麼遠了。
+    <tag>愛泡咖休閒廣場</tag><tag>泡腳咖啡廳</tag>`,
+    thumbnail: 'aiPaoKa230110.png',
+    colorTone: '#47130f',
+    time: '2023/01/10',
+    media: [
+      {
+        type: 'video',
+        src: 'aiPaoKa230110.mp4',
+        thumbnail: 'aiPaoKa230110.png'
+      }
+    ]
+  },
+  {
     title: '鹿雅森林',
     description: `這裡最知名的是寵物友善，大家會帶著自己的狗狗來。
     很不巧的，夜景看著看著突然四周起大霧，下山時差點什麼也看不見。
