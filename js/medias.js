@@ -3,9 +3,10 @@ var MEDIAS = [
   {
     title: '鹿雅森林',
     description: `這裡最知名的是寵物友善，大家會帶著自己的狗狗來。
-    很不巧的，夜景看著看著突然四周起大霧，下山時差點什麼也看不見。`,
+    很不巧的，夜景看著看著突然四周起大霧，下山時差點什麼也看不見。
+    <tag>鹿雅森林夜景咖啡廳</tag><tag>寵物友善餐廳</tag>`,
     thumbnail: 'luYaCoffee230108.png',
-    colorTone: '#9b8fa0',
+    colorTone: '#0b0a10',
     time: '2023/01/07',
     media: [
       {
@@ -26,9 +27,35 @@ var MEDIAS = [
     ]
   },
   {
+    title: 'MITAKA 3e CAFE',
+    description: `這間特別厲害的是室外空間裝潢，咖啡也有精緻的拉花。
+    而這條小路上一連開了四間夜景咖啡廳。
+    現在我知道原因了，地點特好，已經去過其中三間，在這條小路上的夜景一律視角超好🤣
+    <tag>MITAKA 3e 夜景咖啡廳</tag>`,
+    thumbnail: 'mitaka230108.png',
+    colorTone: '#040507',
+    time: '2023/01/07',
+    media: [
+      {
+        type: 'image',
+        src: 'mitaka230108_1.png'
+      }, {
+        type: 'image',
+        src: 'mitaka230108_2.png'
+      }, {
+        type: 'image',
+        src: 'mitaka230108_3.png'
+      }, {
+        type: 'image',
+        src: 'mitaka230108_4.png'
+      }
+    ]
+  },
+  {
     title: '拍貼機拍起來',
     description: `看到出門玩拍貼機當打卡就也很想跟一波。
-    於是最近就跑到東海和逢甲各來了一張`,
+    於是最近就跑到東海和逢甲各來了一張
+    <tag>拍貼機</tag>`,
     thumbnail: 'photoBoth230107.png',
     colorTone: '#9b8fa0',
     time: '2023/01/07',
@@ -113,7 +140,8 @@ var MEDIAS = [
   {
     title: '柳川聖誕水舞秀',
     description: `謝謝台中，讓我平常有很多很棒地方可以去。
-    這水舞真的很有水準，很美`,
+    這水舞真的很有水準，很美
+    <tag>柳川</tag>`,
     thumbnail: 'liuChuan230101.png',
     colorTone: '#06021b',
     time: '2023/01/01',
@@ -135,7 +163,8 @@ var MEDIAS = [
   {
     title: '第一次參加跨年盛事',
     description: `剛好台中的卡司好像還是最多人喜歡的。
-    覺得最後一兩組很可憐，大家看完林宥嘉就快跑光了，在快到的路上根本還沒上台，就先目送人潮開始消失。`,
+    覺得最後一兩組很可憐，大家看完林宥嘉就快跑光了，在快到的路上根本還沒上台，就先目送人潮開始消失。
+    <tag>台中水湳中央公園</tag>`,
     thumbnail: 'centralPark221231.png',
     colorTone: '#171e24',
     time: '2022/12/31',
@@ -313,7 +342,8 @@ var MEDIAS = [
   },
   {
     title: '刀療體驗',
-    description: `逛市集的時候發現他們提供公益體驗，然後我就來初體驗了～`,
+    description: `逛市集的時候發現他們提供公益體驗，然後我就來初體驗了～
+    <tag>北屯新村</tag>`,
     thumbnail: 'knifeHealing220918.png',
     colorTone: '#6c6157',
     time: '2022/09/18',
