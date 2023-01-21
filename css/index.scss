@@ -302,6 +302,15 @@ body {
       font-size: 0.8rem;
     }
   }
+  .shareBtn {
+    position: absolute;
+    left: 1rem;
+    top: 0rem;
+    padding: 1rem;
+    color: transparent;
+    text-shadow: 0 0 0 #635994;
+    font-size: 1.2em;
+  }
   .closeBtn {
     position: absolute;
     right: 1rem;

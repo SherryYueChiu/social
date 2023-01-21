@@ -20,6 +20,11 @@ var INTROS = [
   <a>#社會運動參與者</a> <a>#素食者</a> <a>#聲音控</a> <a>#極簡主義</a> <a>#INFP</a>`
 ];
 
+var global = {
+  postIdx: null,
+  postPage: null
+}
+
 function setAvatar() {
   if (curAVATAR === null) curAVATAR = Math.floor(Math.random() * AVATARS.length);
   else curAVATAR = (curAVATAR + 1) % AVATARS.length;
@@ -101,12 +106,17 @@ function setCalendar() {
 }
 
 function dismissPreview() {
+  global.postIdx = null;
+  global.postPage = null;
   $('.main').removeClass('blur');
   $('.previewBox').addClass('hide');
   document.querySelectorAll('.previewBox video').forEach(vid => vid.pause());
 }
 
 function viewMedia(idx, page = 0) {
+  global.postIdx = idx;
+  global.postPage = page;
+
   $('.main').addClass('blur');
   $('.previewBox').removeClass('hide');
 
@@ -208,4 +218,19 @@ function showContactOptions() {
 
 function dismissContactOptions() {
   $('.contactOptionsContainer').addClass('hide');
+}
+
+function shareMedia() {
+  let postIdx = MEDIAS.length - global.postIdx - 1;
+  let postPage = global.postPage;
+
+  const copyContent = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      Swal.fire('已經複製到剪貼簿', text);
+    } catch (err) {
+      Swal.fire('剪貼簿複製失敗', text);
+    }
+  }
+  copyContent(`https://sherryyuechiu.github.io/social?category=media&postidx=${postIdx}&page=${postPage}`);
 }
