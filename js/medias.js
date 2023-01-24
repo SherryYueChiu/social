@@ -1,6 +1,44 @@
 /** @type MediaPost[] */
 var MEDIAS = [
   {
+    title: '紫莉幸孕莊園',
+    description: `分娩體驗真的超級痛，但沒有掙扎沒有哀號，一切都是平平淡淡的。
+    有把一般和催生都完整體驗完
+    拉梅茲呼吸法是真的很有幫助，只要一秒亂了就會覺得要爆炸了。
+    而心得呢，就是我沒有生育能力真的是太可惜了>
+
+    一小時完整錄影點這↓
+    <a href="https://photos.app.goo.gl/SSRRoYSayK8F8yjEA">https://photos.app.goo.gl/SSRRoYSayK8F8yjEA</a>
+    快帶你們的隊友一起去磨一下
+    <tag>紫莉幸孕莊園</tag>`,
+    thumbnail: 'zili230124.png',
+    colorTone: '#697e90',
+    time: '2023/01/24',
+    media: [
+      {
+        type: 'image',
+        src: 'zili230124.png'
+      },
+      {
+        type: 'video',
+        src: 'zili230124_2.mp4',
+        thumbnail: 'zili230124_2.png'
+      },
+      {
+        type: 'image',
+        src: 'zili230124_3.png'
+      },
+      {
+        type: 'image',
+        src: 'zili230124_4.png'
+      },
+      {
+        type: 'image',
+        src: 'zili230124_5.png'
+      },
+    ]
+  },
+  {
     title: '嶺東農場',
     description: `原本是要去看鳥的，結果幾乎都在和這隻山羊玩
     他聖誕節出生的，一個月大。現在就像隻狗一樣活潑，小小隻的。
