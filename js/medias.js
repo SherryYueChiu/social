@@ -91,6 +91,31 @@ var MEDIAS = [
     ]
   },
   {
+    title: 'Rico Noche Cafe',
+    description: `這邊的景色被樹木和建築物擋住很多，裝潢倒是不輸其他間。
+    菜單上有兩款飲料的名字很有趣，哈密瓜呱和麻啡。原本想點來看看的，但店員說沒有了。
+    <tag>Rico Noche Cafe</tag>`,
+    thumbnail: 'ricoNocheCafe.png',
+    colorTone: '#000000',
+    time: '2023/01/12',
+    media: [
+      {
+        type: 'video',
+        src: 'ricoNocheCafe.mp4',
+        thumbnail: 'ricoNocheCafe_1.png'
+      },
+      {
+        type: 'image',
+        src: 'ricoNocheCafe_2.png',
+      },
+      {
+        type: 'video',
+        src: 'ricoNocheCafe_3.mp4',
+        thumbnail: 'ricoNocheCafe_3.png'
+      }
+    ]
+  },
+  {
     title: '愛泡咖休閒廣場',
     description: `之前出門泡泡腳都要去到彰化，沒想到沙鹿也有一間。
     太好了，這樣以後也不一定要跑這麼遠了。
