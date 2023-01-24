@@ -1,6 +1,38 @@
 /** @type MediaPost[] */
 var MEDIAS = [
   {
+    title: '嶺東農場',
+    description: `原本是要去看鳥的，結果幾乎都在和這隻山羊玩
+    他聖誕節出生的，一個月大。現在就像隻狗一樣活潑，小小隻的。
+    還讓我成了一直對羊咩咩叫的人類。
+    <tag>嶺東農場</tag>`,
+    thumbnail: 'linDongFarm230122.png',
+    colorTone: '#697e90',
+    time: '2023/01/22',
+    media: [
+      {
+        type: 'video',
+        src: 'linDongFarm230122.mp4',
+        thumbnail: 'linDongFarm230122_1.png'
+      },
+      {
+        type: 'video',
+        src: 'linDongFarm230122_2.mp4',
+        thumbnail: 'linDongFarm230122_2.png'
+      },
+      {
+        type: 'video',
+        src: 'linDongFarm230122_3.mp4',
+        thumbnail: 'linDongFarm230122_3.png'
+      },
+      {
+        type: 'video',
+        src: 'linDongFarm230122_4.mp4',
+        thumbnail: 'linDongFarm230122_4.png'
+      }
+    ]
+  },
+  {
     title: '愛泡咖休閒廣場',
     description: `之前出門泡泡腳都要去到彰化，沒想到沙鹿也有一間。
     太好了，這樣以後也不一定要跑這麼遠了。
