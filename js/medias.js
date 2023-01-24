@@ -71,6 +71,26 @@ var MEDIAS = [
     ]
   },
   {
+    title: '雲河星空',
+    description: `這地方太完美了。
+    今天自然醒之後衝到彰化的雲河星空景觀咖啡廳。
+    從公園遊樂設施、各種高空盪鞦韆、泡腳、玻璃橋、步道、夜景，我喜歡的都有。
+    而且東西好吃，素食也有選項。
+    夜景更是完勝台中海線🦄
+    感覺以後我也不用去遊樂園了，就來這裡。
+    <tag>雲河星空景觀餐廳</tag>`,
+    thumbnail: 'yunHeXingKong230115.png',
+    colorTone: '#131a11',
+    time: '2023/01/15',
+    media: [
+      {
+        type: 'video',
+        src: 'yunHeXingKong230115.mp4',
+        thumbnail: 'yunHeXingKong230115_1.png'
+      }
+    ]
+  },
+  {
     title: '愛泡咖休閒廣場',
     description: `之前出門泡泡腳都要去到彰化，沒想到沙鹿也有一間。
     太好了，這樣以後也不一定要跑這麼遠了。
