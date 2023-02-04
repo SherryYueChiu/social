@@ -1,6 +1,31 @@
 /** @type MediaPost[] */
 var MEDIAS = [
   {
+    title: '爬爬咖啡廳',
+    description: `爬蟲也好可愛❤️可惜感受到他們好的人還不太多
+    <tag>爬咖啡</tag>`,
+    thumbnail: 'climbCafe230126.png',
+    colorTone: '#5f2812',
+    time: '2023/01/26',
+    media: [
+      {
+        type: 'video',
+        src: 'climbCafe230126_1.mp4',
+        thumbnail: 'climbCafe230126_1.png'
+      },
+      {
+        type: 'video',
+        src: 'climbCafe230126_2.mp4',
+        thumbnail: 'climbCafe230126_2.png'
+      },
+      {
+        type: 'video',
+        src: 'climbCafe230126_3.mp4',
+        thumbnail: 'climbCafe230126_3.png'
+      },
+    ]
+  },
+  {
     title: '紫莉幸孕莊園',
     description: `分娩體驗真的超級痛，但沒有掙扎沒有哀號，一切都是平平淡淡的。
     有把一般和催生都完整體驗完
