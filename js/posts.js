@@ -3,6 +3,7 @@ var POSTS = [
     title: '今年還想嘗試的事情',
     time: '2023/01/23 00:10',
     content: `<ul>
+    <li><del>泡泡足球</del></li>
     <li>豪華露營</li>
     <li>南投：高空彈跳</li>
     <li>南投：雙龍七彩吊橋</li>
@@ -12,7 +13,6 @@ var POSTS = [
     <li>浮潛</li>
     <li>抱石/攀岩體驗</li>
     <li>指甲美容</li>
-    <li>泡泡足球</li>
 </ul>`
   }
 ];
