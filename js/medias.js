@@ -26,6 +26,66 @@ var MEDIAS = [
     ]
   },
   {
+    title: '九九峰動物樂園',
+    description: `今天的我，沉浸在滿滿的鳥鳥能量中
+    <tag>九九峰動物樂園</tag>`,
+    thumbnail: 'jojozoo230126.png',
+    colorTone: '#1b1212',
+    time: '2023/01/26',
+    media: [
+      {
+        type: 'video',
+        src: 'jojozoo230126_1.mp4',
+        thumbnail: 'jojozoo230126_1.png'
+      },
+      {
+        type: 'video',
+        src: 'jojozoo230126_2.mp4',
+        thumbnail: 'jojozoo230126_2.png'
+      },
+      {
+        type: 'video',
+        src: 'jojozoo230126_3.mp4',
+        thumbnail: 'jojozoo230126_3.png'
+      },
+      {
+        type: 'video',
+        src: 'jojozoo230126_4.mp4',
+        thumbnail: 'jojozoo230126_4.png'
+      },
+      {
+        type: 'video',
+        src: 'jojozoo230126_5.mp4',
+        thumbnail: 'jojozoo230126_5.png'
+      },
+      {
+        type: 'video',
+        src: 'jojozoo230126_6.mp4',
+        thumbnail: 'jojozoo230126_6.png'
+      },
+      {
+        type: 'video',
+        src: 'jojozoo230126_7.mp4',
+        thumbnail: 'jojozoo230126_7.png'
+      },
+      {
+        type: 'video',
+        src: 'jojozoo230126_8.mp4',
+        thumbnail: 'jojozoo230126_8.png'
+      },
+      {
+        type: 'video',
+        src: 'jojozoo230126_9.mp4',
+        thumbnail: 'jojozoo230126_9.png'
+      },
+      {
+        type: 'video',
+        src: 'jojozoo230126_10.mp4',
+        thumbnail: 'jojozoo230126_10.png'
+      },
+    ]
+  },
+  {
     title: '紫莉幸孕莊園',
     description: `分娩體驗真的超級痛，但沒有掙扎沒有哀號，一切都是平平淡淡的。
     有把一般和催生都完整體驗完
