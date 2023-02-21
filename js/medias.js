@@ -1,6 +1,26 @@
 /** @type MediaPost[] */
 var MEDIAS = [
   {
+    title: 'Trif酒吧',
+    description: `🏳️‍⚧️🏳️‍⚧️🏳️‍⚧️🏳️‍⚧️🏳️‍⚧️🏳️‍⚧️🏳️‍⚧️
+    Trif酒吧，喝到了很特別的調酒，也聊了各種話題
+    這次是第一次近距離跟大家互動餒 都很可愛🤫
+    <tag>跨跨限定</tag><tag>調酒</tag>`,
+    thumbnail: 'TriffBar230219.png',
+    colorTone: '#4d4d4b',
+    time: '2023/02/19',
+    media: [
+      {
+        type: 'video',
+        src: 'TriffBar230219_1.mp4',
+      },
+      {
+        type: 'video',
+        src: 'TriffBar230219_2.mp4',
+      }
+    ]
+  },
+  {
     title: '膠囊旅館',
     description: `一般來說主題住宿都非常貴，我幾乎沒辦法負擔。但膠囊旅館是青旅，我覺得大家都很值得去住一次看看。
     科技風格的特色就是每道門都是刷門禁卡自動開啟，但我到現場才知道這點，看著二元空間的門禁讓我感到很恐慌。
