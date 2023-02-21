@@ -76,6 +76,46 @@ var MEDIAS = [
     ]
   },
   {
+    title: '泡泡足球',
+    description: `自從第一次看到就一直好想玩，某一天滑ET飯局APP的時候發現了！
+    這肯定是要+1的呀！
+    只是感覺還是有一點危險性，好幾個人受傷，還有更多隔天全身酸痛的
+    <tag>泡泡足球</tag>`,
+    thumbnail: 'bubbleSoccer230211.png',
+    colorTone: '#636b74',
+    time: '2023/02/11',
+    media: [
+      {
+        type: 'image',
+        src: 'bubbleSoccer230211_1.png',
+      },
+      {
+        type: 'video',
+        src: 'bubbleSoccer230211_2.mp4',
+      },
+      {
+        type: 'video',
+        src: 'bubbleSoccer230211_3.mp4',
+      },
+      {
+        type: 'video',
+        src: 'bubbleSoccer230211_4.mp4',
+      },
+      {
+        type: 'video',
+        src: 'bubbleSoccer230211_5.mp4',
+      },
+      {
+        type: 'video',
+        src: 'bubbleSoccer230211_6.mp4',
+      },
+      {
+        type: 'image',
+        src: 'bubbleSoccer230211_7.png',
+      }
+    ]
+  },
+  {
     title: '爬爬咖啡廳',
     description: `爬蟲也好可愛❤️可惜感受到他們好的人還不太多
     <tag>爬咖啡</tag>`,
