@@ -131,6 +131,41 @@ var MEDIAS = [
     ]
   },
   {
+    title: '眺高夜景咖啡廳',
+    description: `大坑的夜景也是很好看的，而且這間咖啡廳環境很舒服
+    累了就直接睡覺😎
+    <tag>眺高夜景咖啡廳</tag><tag>台中大坑</tag>`,
+    thumbnail: 'tiaoGaoCafe230125.png',
+    colorTone: '#4d4d4b',
+    time: '2023/01/25',
+    media: [
+      {
+        type: 'image',
+        src: 'tiaoGaoCafe230125_1.png',
+      },
+      {
+        type: 'video',
+        src: 'tiaoGaoCafe230125_2.mp4',
+      },
+      {
+        type: 'image',
+        src: 'tiaoGaoCafe230125_3.png',
+      },
+      {
+        type: 'image',
+        src: 'tiaoGaoCafe230125_4.png',
+      },
+      {
+        type: 'video',
+        src: 'tiaoGaoCafe230125_5.mp4',
+      },
+      {
+        type: 'video',
+        src: 'tiaoGaoCafe230125_6.mp4',
+      }
+    ]
+  },
+  {
     title: '紫莉幸孕莊園',
     description: `分娩體驗真的超級痛，但沒有掙扎沒有哀號，一切都是平平淡淡的。
     有把一般和催生都完整體驗完
