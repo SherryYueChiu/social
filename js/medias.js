@@ -46,6 +46,36 @@ var MEDIAS = [
     ]
   },
   {
+    title: '不夜天夜景咖啡廳',
+    description: `去過很多次的地方，但第一次認真拿起相機
+    <tag>不夜天夜景咖啡廳</tag>`,
+    thumbnail: 'buYeTianCafe.png',
+    colorTone: '#020005',
+    time: '2023/02/12',
+    media: [
+      {
+        type: 'image',
+        src: 'buYeTianCafe_1.png',
+      },
+      {
+        type: 'video',
+        src: 'buYeTianCafe_2.mp4',
+      },
+      {
+        type: 'video',
+        src: 'buYeTianCafe_3.mp4',
+      },
+      {
+        type: 'video',
+        src: 'buYeTianCafe_4.mp4',
+      },
+      {
+        type: 'image',
+        src: 'buYeTianCafe_5.png',
+      }
+    ]
+  },
+  {
     title: '爬爬咖啡廳',
     description: `爬蟲也好可愛❤️可惜感受到他們好的人還不太多
     <tag>爬咖啡</tag>`,
