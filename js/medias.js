@@ -1,6 +1,31 @@
 /** @type MediaPost[] */
 var MEDIAS = [
   {
+    title: '膠囊旅館',
+    description: `一般來說主題住宿都非常貴，我幾乎沒辦法負擔。但膠囊旅館是青旅，我覺得大家都很值得去住一次看看。
+    科技風格的特色就是每道門都是刷門禁卡自動開啟，但我到現場才知道這點，看著二元空間的門禁讓我感到很恐慌。
+    但更驚喜的是，在我猶豫很久之後發現，他們早替我開通了適當的門禁。
+    感謝飛天小女警，又度過了美好的一天。
+    <tag>黑熊好眠旅館 台北橋站</tag><tag>膠囊旅館</tag>`,
+    thumbnail: 'capsuleHotel230218.png',
+    colorTone: '#9e8fd0',
+    time: '2023/02/18',
+    media: [
+      {
+        type: 'video',
+        src: 'capsuleHotel230218_1.mp4',
+      },
+      {
+        type: 'video',
+        src: 'capsuleHotel230218_2.mp4',
+      },
+      {
+        type: 'image',
+        src: 'capsuleHotel230218_3.PNG'
+      },
+    ]
+  },
+  {
     title: '爬爬咖啡廳',
     description: `爬蟲也好可愛❤️可惜感受到他們好的人還不太多
     <tag>爬咖啡</tag>`,
