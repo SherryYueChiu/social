@@ -694,6 +694,72 @@ var MEDIAS = [
     }]
   },
   {
+    title: '西部的沙灘',
+    description: `心血來潮衝到苗栗踩沙灘，冬天的海邊真的是有夠冷，風也很狂妄。
+    在被吹得差不多要著涼前，到入口附近的餐酒館覓個食，順便躺一下。
+    <tag>西部的沙灘</tag>`,
+    thumbnail: 'JiaRiZhiSen221211.png',
+    colorTone: '#545354',
+    time: '2022/10/11',
+    media: [
+      {
+        type: 'video',
+        src: 'JiaRiZhiSen221211_1.mp4',
+      },
+      {
+        type: 'video',
+        src: 'JiaRiZhiSen221211_2.mp4',
+      },
+      {
+        type: 'video',
+        src: 'JiaRiZhiSen221211_3.mp4',
+      },
+      {
+        type: 'video',
+        src: 'JiaRiZhiSen221211_4.mp4',
+      },
+      {
+        type: 'video',
+        src: 'JiaRiZhiSen221211_5.mp4',
+      },
+    ]
+  },
+  {
+    title: '星星夜景咖啡廳',
+    description: `因為附近很多間夜景咖啡廳，於是每次都選一間不同的去。
+    這次是東海附近的星星夜景咖啡廳
+    <tag>星星夜景咖啡廳</tag>`,
+    thumbnail: 'XingXingCafe221210.png',
+    colorTone: '#38424b',
+    time: '2022/10/10',
+    media: [
+      {
+        type: 'image',
+        src: 'XingXingCafe221210_1.png',
+      },
+      {
+        type: 'video',
+        src: 'XingXingCafe221210_2.mp4',
+      },
+      {
+        type: 'video',
+        src: 'XingXingCafe221210_3.mp4',
+      },
+      {
+        type: 'video',
+        src: 'XingXingCafe221210_4.mp4',
+      },
+      {
+        type: 'image',
+        src: 'XingXingCafe221210_5.png',
+      },
+      {
+        type: 'video',
+        src: 'XingXingCafe221210_6.mp4',
+      },
+    ]
+  },
+  {
     title: '來咖啡廳chill一下',
     description: `來咖啡廳chill一下
     全世界都在忙，就我在這邊悠哉
