@@ -22,7 +22,7 @@ var MEDIAS = [
   },
   {
     title: '膠囊旅館',
-    description: `一般來說主題住宿都非常貴，我幾乎沒辦法負擔。但膠囊旅館是青旅，我覺得大家都很值得去住一次看看。
+    description: `一般來說主題住宿都非常貴，我幾乎沒辦法負擔。但膠囊旅館是青旅，非常平價。我覺得大家都很值得去住一次看看。
     科技風格的特色就是每道門都是刷門禁卡自動開啟，但我到現場才知道這點，看著二元空間的門禁讓我感到很恐慌。
     但更驚喜的是，在我猶豫很久之後發現，他們早替我開通了適當的門禁。
     感謝飛天小女警，又度過了美好的一天。
@@ -684,14 +684,19 @@ var MEDIAS = [
   {
     title: '美美的忘憂谷',
     description: `<tag>外埔忘憂谷</tag>`,
-    thumbnail: 'TaichungWanYouGu221022.png',
+    thumbnail: 'WaiPuWangYouGu221022.png',
     colorTone: '#aebdc4',
     time: '2022/10/22',
-    media: [{
-      type: 'video',
-      src: 'TaichungWanYouGu221022.mp4',
-      thumbnail: 'TaichungWanYouGu221022.png',
-    }]
+    media: [
+      {
+        type: 'image',
+        src: 'WaiPuWangYouGu221022_1.png',
+      }, {
+        type: 'video',
+        src: 'WaiPuWangYouGu221022_2.mp4',
+        thumbnail: 'WaiPuWangYouGu221022_2.png',
+      }
+    ]
   },
   {
     title: '西部的沙灘',
