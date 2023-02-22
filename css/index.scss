@@ -26,10 +26,10 @@ body {
 }
 
 .main {
-  &.blur{
+  &.blur {
     filter: blur(5px);
   }
-  
+
   .info {
     display: grid;
     grid-template-columns: 120px auto;
@@ -43,8 +43,45 @@ body {
       margin: 1rem 0 1rem 0;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 2px solid #a0a0a0;
+      border: 2px solid #ffffff;
       border-radius: 50%;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: 15px;
+        width: 100px;
+        height: 100px;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        box-shadow: 0 0 2px #ff3838, /*外圈光暈*/ inset 0 0 2px #8eb6ff; /*內圈光暈*/
+        animation: animate 5s linear infinite;
+      }
+
+      @keyframes animate {
+        /*顏色漸變*/
+        0% {
+          box-shadow: 0 0 2px #ff3838, inset 0 0 2px #8eb6ff;
+          filter: hue-rotate(0deg); /*應該是指"色環"的角度*/
+        }
+        20% {
+          box-shadow: 0 0 3px #ff3838, inset 0 0 1px #8eb6ff;
+        }
+        40% {
+          box-shadow: 0 0 5px #ff3838, inset 0 0 5px #8eb6ff;
+        }
+        60% {
+          box-shadow: 0 0 2px #ff3838, inset 0 0 2px #8eb6ff;
+        }
+        80% {
+          box-shadow: 0 0 7px #ff3838, inset 0 0 7px #8eb6ff;
+        }
+        100% {
+          box-shadow: 0 0 6px #ff3838, inset 0 0 6px #8eb6ff;
+          filter: hue-rotate(360deg);
+        }
+      }
     }
     .nickname {
       grid-column: 2 / 3;

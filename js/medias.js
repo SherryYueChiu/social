@@ -116,6 +116,50 @@ var MEDIAS = [
     ]
   },
   {
+    title: '星月天空夜景景觀餐廳',
+    description: `台中以外的夜景一直刷新我的認知耶，這裡也是什麼都有。
+    但人有點多，讓我感到好有壓力。
+    還可以用營火取暖，前陣子真的是冷到矮3公分耶
+    <tag>星月天空夜景景觀餐廳</tag>`,
+    thumbnail: 'xingYueTianKongCafe.png',
+    colorTone: '#191d2e',
+    time: '2023/01/27',
+    media: [
+      {
+        type: 'video',
+        src: 'xingYueTianKongCafe_1.mp4',
+      },
+      {
+        type: 'video',
+        src: 'xingYueTianKongCafe_2.mp4',
+      },
+      {
+        type: 'video',
+        src: 'xingYueTianKongCafe_3.mp4',
+      },
+      {
+        type: 'video',
+        src: 'xingYueTianKongCafe_4.mp4',
+      },
+      {
+        type: 'video',
+        src: 'xingYueTianKongCafe_5.mp4',
+      },
+      {
+        type: 'image',
+        src: 'xingYueTianKongCafe_6.png',
+      },
+      {
+        type: 'video',
+        src: 'xingYueTianKongCafe_7.mp4',
+      },
+      {
+        type: 'image',
+        src: 'xingYueTianKongCafe_8.png',
+      },
+    ]
+  },
+  {
     title: '爬爬咖啡廳',
     description: `爬蟲也好可愛❤️可惜感受到他們好的人還不太多
     <tag>爬咖啡</tag>`,
@@ -916,9 +960,8 @@ var MEDIAS = [
     colorTone: '#60544f',
     time: '2022/04/27',
     media: [{
-      type: 'video',
+      type: 'image',
       src: 'caier220427.png',
-      thumbnail: 'caier220427.png',
     }]
   },
   {
@@ -963,7 +1006,7 @@ var MEDIAS = [
   },
   {
     title: '執事咖啡廳',
-    description: `除了用語很撩，還會跪下來幫你點餐？！！
+    description: `除了用語很撩，還會跪下來幫你點餐？！！怎麼可以有人長得像他那樣又帥又漂亮的啦
     <tag>台北地下街</tag>`,
     thumbnail: 'chittyMood220226.png',
     colorTone: '#cca5ab',
