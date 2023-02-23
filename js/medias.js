@@ -627,6 +627,34 @@ var MEDIAS = [
     話說我已經去兩次台中的執事咖啡廳了，卻一直沒看到執事
     我的執事呢？？
     <tag>心跳女僕咖啡廳</tag>`,
+    thumbnail: 'JiHaoShiJi221105.png',
+    colorTone: '#3e3f44',
+    time: '2022/11/05',
+    media: [
+      {
+        type: 'image',
+        src: 'JiHaoShiJi221105_1.png',
+      }, {
+        type: 'video',
+        src: 'JiHaoShiJi221105_2.mp4'
+      }, {
+        type: 'image',
+        src: 'JiHaoShiJi221105_3.png'
+      }, {
+        type: 'video',
+        src: 'JiHaoShiJi221105_4.mp4'
+      }, {
+        type: 'image',
+        src: 'JiHaoShiJi221105_5.png'
+      }
+    ]
+  },
+  {
+    title: '女僕咖啡廳',
+    description: `第一次去女僕咖啡廳，我還唸了讓食物變好吃咒語🐸
+    話說我已經去兩次台中的執事咖啡廳了，卻一直沒看到執事
+    我的執事呢？？
+    <tag>心跳女僕咖啡廳</tag>`,
     thumbnail: 'DokiMaidCafe221225.png',
     colorTone: '#aaaea0',
     time: '2022/10/25',
