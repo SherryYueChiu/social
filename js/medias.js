@@ -1,6 +1,21 @@
 /** @type MediaPost[] */
 var MEDIAS = [
   {
+    title: '飛航主題遊客中心',
+    description: `中央公園真的蠻用心在經營的耶。
+    除了跨年、燈會這種大活動，最近還把遊客中心內部改造成機場風格。
+    昨天才知道這個活動，趁著今天是最後一天，趕快來看看。還帶了護照來🦖`,
+    thumbnail: 'zhongYangGongYuan230305.webp',
+    colorTone: '#4d4d4b',
+    time: '2023/03/05',
+    media: [
+      {
+        type: 'video',
+        src: 'zhongYangGongYuan230305_1.mp4',
+      }
+    ]
+  },
+  {
     title: 'Trif酒吧',
     description: `🏳️‍⚧️🏳️‍⚧️🏳️‍⚧️🏳️‍⚧️🏳️‍⚧️🏳️‍⚧️🏳️‍⚧️
     Trif酒吧，喝到了很特別的調酒，也聊了各種話題
