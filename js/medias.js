@@ -315,7 +315,7 @@ var MEDIAS = [
       },
       {
         type: 'video',
-        src: 'zili230124_2.mp4',
+        src: 'zili230124_2.webm',
         thumbnail: 'zili230124_2.webp'
       },
       {
@@ -344,22 +344,22 @@ var MEDIAS = [
     media: [
       {
         type: 'video',
-        src: 'linDongFarm230122.mp4',
+        src: 'linDongFarm230122.webm',
         thumbnail: 'linDongFarm230122_1.webp'
       },
       {
         type: 'video',
-        src: 'linDongFarm230122_2.mp4',
+        src: 'linDongFarm230122_2.webm',
         thumbnail: 'linDongFarm230122_2.webp'
       },
       {
         type: 'video',
-        src: 'linDongFarm230122_3.mp4',
+        src: 'linDongFarm230122_3.webm',
         thumbnail: 'linDongFarm230122_3.webp'
       },
       {
         type: 'video',
-        src: 'linDongFarm230122_4.mp4',
+        src: 'linDongFarm230122_4.webm',
         thumbnail: 'linDongFarm230122_4.webp'
       }
     ]
@@ -884,7 +884,7 @@ var MEDIAS = [
     time: '2022/09/18',
     media: [{
       type: 'video',
-      src: 'sing220918.mp4',
+      src: 'sing220918.webm',
       thumbnail: 'sing220918.webp',
     }]
   },
