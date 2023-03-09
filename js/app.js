@@ -134,11 +134,13 @@ function viewMedia(idx, page = 0) {
       .css({
         opacity: 1,
         backgroundImage: `url(./media/${post.media[page].src})`
-      });
+      })
+      .removeClass('hide');
     $('.previewBox>.video')
       .css({ opacity: 0 })
       .attr('src', '')
-      .attr('poster', '');
+      .attr('poster', '')
+      .addClass('hide');
   }
   else if (post.media[page].type === 'video') {
     $info.find('.title').html(post?.title ?? '');
@@ -148,12 +150,14 @@ function viewMedia(idx, page = 0) {
     $('.previewBox>.video')
       .css({ opacity: 1 })
       .attr('src', `./media/${post.media[page].src}`)
-      .attr('poster', `./media/thumbnail/${post.media[page].thumbnail}`);
+      .attr('poster', `./media/thumbnail/${post.media[page].thumbnail}`)
+      .removeClass('hide');
     $('.previewBox>.image')
       .css({
         opacity: 0,
         backgroundImage: ''
-      });
+      })
+      .addClass('hide');
   }
   // 顯示換頁鈕
   if (page <= 0) {
