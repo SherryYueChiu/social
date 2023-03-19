@@ -1,6 +1,33 @@
 /** @type MediaPost[] */
 var MEDIAS = [
   {
+    title: '連身泳衣',
+    description: `感覺每過幾個月我就會跑到附近這間泡溫泉，是不是該給我一張VIP啦🦅
+    最推他們的淋浴間有非二元區塊，但花園游泳池好像就沒有，沒關係，那就泡溫泉就好，游泳就去國民運動中心用無障礙空間。
+    沒想到我腰圍90體重77還可以穿連身泳衣吧，去年我還只敢穿水母衣包緊緊的說。學會他king和縮肚肚之後真的是多了一些自信。`,
+    thumbnail: 'xingXinHotSpring.webp',
+    colorTone: '#564f3c',
+    time: '2023/03/19',
+    media: [
+      {
+        type: 'video',
+        src: 'xingXinHotSpring_1.mp4',
+      },
+      {
+        type: 'video',
+        src: 'xingXinHotSpring_2.mp4',
+      },
+      {
+        type: 'image',
+        src: 'xingXinHotSpring_3.webp',
+      },
+      {
+        type: 'image',
+        src: 'xingXinHotSpring_4.webp',
+      },
+    ]
+  },
+  {
     title: '開揪 超多人',
     description: `🍕中午大家約了一波披薩吃到飽，我們人多到感覺可以用浩浩蕩蕩來形容了餒。
     🦜大家還陪我一起去饒河夜市看鳥鳥，算命師會讓鳥鳥抽籤來給他占卜。用的還是文鳥，我跟我一起長大的鳥鳥就是文鳥♥
