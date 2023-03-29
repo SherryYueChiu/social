@@ -3,15 +3,20 @@
   src: url(../Iansui0.91-Regular.ttf);
 }
 
+@font-face {
+  font-family: jf-openhuninn;
+  src: url(../jf-openhuninn-1.1.ttf);
+}
+
 body {
   background-color: white;
   color: black;
   background: #cfbeaa;
-  font-family: Iansui;
+  font-family: jf-openhuninn;
 }
 
 * {
-  font-family: Iansui;
+  font-family: jf-openhuninn;
 }
 
 @media (min-width: 800px) {
