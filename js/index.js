@@ -31,7 +31,15 @@ function parseUrlParam() {
 
 // register service worker
 try {
-  navigator.serviceWorker.register('service-worker.js', { scope: "." });
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js', { scope: "." })
+      .then(function (registration) {
+        console.log('ServiceWorker registered successfully', registration);
+      })
+      .catch(function (error) {
+        console.error('ServiceWorker registration failed:', error);
+      });
+  }
 } catch (err) {
   console.warn('serviceWorker register failed.', err);
 }
