@@ -5,6 +5,7 @@ var POSTS = [
     content: `<ul>
     <li><del>泡泡足球</del></li>
     <li>豪華露營</li>
+    <li>無光晚餐</li>
     <li>南投：高空彈跳</li>
     <li>南投：雙龍七彩吊橋</li>
     <li>南投：日月潭水晶車廂</li>
